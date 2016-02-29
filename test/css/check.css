@@ -1,0 +1,548 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ width:100%; height:100%; margin:auto; background-color:#f0f0f0;}
+html{ width:100%; height:100%;font-size:10px}
+img,input{ margin:0; padding:0;}
+a{text-decoration:none;color:#595858;}
+.hidens{ width:100%;height:48px}
+.click{ color:#4389c5}
+.chose{ color:#e95b65}
+.ui-loader-default{ display:none;!important}
+.ui-mobile-viewport{ border:none;!important}
+.ui-page {padding: 0; margin: 0; outline: 0;!important}
+/*原始（640）*/
+
+.nav{
+	width:100%;
+	height:48px;
+	background-color:#2a8ae0;
+	-moz-box-shadow: 0px 1px 1px #3e75a6;
+    -webkit-box-shadow: 0px 1px 1px #3e75a6;
+    box-shadow: 0px 1px 1px #3e75a6;
+	position:fixed;
+	z-index:1
+	}
+.shadow{
+	width:100%;
+	height:48px;
+	}
+.nav .close,.title,.nav-cell{ float:left}		
+.close{
+	height:48px;
+	width:48px;
+	background-image:url(../img/close.png);
+	background-repeat:no-repeat; 
+	background-position:center;
+/*这条只是在页面上显示是看的样式，没什么用*/
+	cursor:pointer;
+	}
+.close i{
+	background-image:url(../img/close.right@2x-I5.png);		    
+	height:48px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	width:75%;
+	font-family:"Microsoft Yahei";
+	font-size:2.2rem;
+	color:#fff;
+	line-height:48px;
+	text-align:center;
+	}
+.title a{
+	width:48px;
+	height:48px;
+	display:block;
+	background-image:url(../img/arrows.png);
+	background-repeat:no-repeat; 
+	background-position: center;
+	position:absolute;
+	top:1%;
+	right:16%;
+	cursor:pointer
+	}
+#nav-cell{
+	height:48px;
+	width:48px;
+	background-image:url(../img/nav-cell.png);
+	background-repeat:no-repeat; 
+	background-position:center;
+	float:right;
+	position:absolute;
+	right:10px;
+	border: none;
+	background-color: #2a8ae0;
+	outline: none;
+	cursor:pointer
+	}
+
+/*盘点列表*/
+.check-nav{
+	width:100%;
+	height:64px;
+	background-color:#fff;
+	overflow:hidden;
+	border-bottom:solid 1px #e4e3e3;
+	}
+.Inventory-icon,.Inventory-people{ float:left}
+.Inventory-icon{
+	width:35px;
+	height:64px;
+	background-image:url(../img/check.png);
+	background-repeat:no-repeat;
+	background-position:center;
+    background-size: 20px 20px;
+	}
+.Inventory-people div{
+	float:left;
+	line-height:65px;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+	color:#999999;
+	}
+.Inventory-people a{color:#999999}
+	
+/*合同列表*/
+.check{
+	width:100%;
+	height:100%;
+	}
+.check-main{
+	width:100%;
+	background-color:#fff;
+	border-bottom:solid 1px #e7e6e6;
+	overflow:hidden;
+	padding-bottom:20px
+	}
+
+.Review-contract{
+	width: 95%;
+	color: #9a9a99;
+	font-family: "微软雅黑";
+	font-size: 1.5rem;
+	margin:auto;
+	letter-spacing:0.1rem
+	}
+.Review-contract a{color: #e95b65;}
+.Review-contract div{
+	margin-top:13px
+	}
+.license-number{
+	margin-left:1.7rem;
+	}
+.address{
+	margin-left:1.7rem;
+	}
+.remark input{
+	width:60%;
+	height:30px;
+	}
+.photo{
+	width:100%;
+	overflow:hidden;
+	margin-top:15px;
+	padding-bottom:20px	
+	}
+.photo div,..photo a,.cut-off{ float:left}
+.photo div{
+	color:#6b6b6b;
+	font-size:2rem;
+	font-family: "微软雅黑";
+	}
+.limber,.aftercar,.kilometre,.else{
+	padding-left:15px;
+	border-top:solid 1px #dcdcdc;
+	border-bottom:solid 1px #dcdcdc;
+	background-color: #fff;
+	line-height:60px;
+	margin-top:5px;
+	}
+/*------------------------------------*/	
+/*微信借入上传图片控件1*/
+.limber-input-wrp {
+float: right;
+clear:left;
+background-image:url(../img/canon.png);
+background-repeat:no-repeat;
+background-position:center;
+height: 60px;
+width: 60px;
+border-left:solid 1px #ECECEC;
+}
+limber-input-wrp:active {
+  border-color: #999999;
+}
+
+.limber-input {
+z-index: 1;
+width: 100%;
+height: 100%;
+opacity: 0;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+line-height:60px;
+	}
+	
+
+/*上传错误删除控件*/
+.limber-clear {
+  float:right;
+  position: relative;
+  margin-bottom: 9px;
+  border-left:solid 1px #ECECEC;
+  width: 60px;
+  height: 60px;
+  z-index:0
+}
+
+.limber-clear:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #D9D9D9;
+  width: 39.5px;
+  height: 2px;
+}
+
+.limber-clear:active {
+  border-color: #999999;
+}
+
+.limber-clear:active:after {
+  background-color: #999999;
+}
+.limber-clear-input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+#limber-fileList{
+	width:95%;
+	height:95%; 
+	margin:auto; 
+	}
+#limber-fileList img{
+	width:100% !important;
+	}	
+#limber-show {
+	display:block;
+	background-color:#fff;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #dcdcdc;
+	}
+/*------------------------------------*/	
+/*微信借入上传图片控件2*/
+.aftercar-input-wrp {
+float: right;
+clear:left;
+background-image:url(../img/canon.png);
+background-repeat:no-repeat;
+background-position:center;
+height: 60px;
+width: 60px;
+border-left:solid 1px #ECECEC;
+}
+aftercar-input-wrp:active {
+  border-color: #999999;
+}
+
+.aftercar-input {
+z-index: 1;
+width: 100%;
+height: 100%;
+opacity: 0;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+line-height:60px;
+	}
+	
+
+/*上传错误删除控件*/
+.aftercar-clear {
+  float:right;
+  position: relative;
+  margin-bottom: 9px;
+  border-left:solid 1px #ECECEC;
+  width: 60px;
+  height: 60px;
+  z-index:0
+}
+
+.aftercar-clear:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #D9D9D9;
+  width: 39.5px;
+  height: 2px;
+}
+
+.aftercar-clear:active {
+  border-color: #999999;
+}
+
+.aftercar-clear:active:after {
+  background-color: #999999;
+}
+.aftercar-clear-input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+#aftercar-fileList{
+	width:95%;
+	height:95%; 
+	margin:auto; 
+	}
+#aftercar-fileList img{
+	width:100% !important;
+	}	
+#aftercar-show {
+	display:block;
+	background-color:#fff;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #dcdcdc;
+	}
+
+/*------------------------------------*/	
+/*微信借入上传图片控件3*/
+.kilometre-input-wrp {
+float: right;
+clear:left;
+background-image:url(../img/canon.png);
+background-repeat:no-repeat;
+background-position:center;
+height: 60px;
+width: 60px;
+border-left:solid 1px #ECECEC;
+}
+kilometre-input-wrp:active {
+  border-color: #999999;
+}
+
+.kilometre-input {
+z-index: 1;
+width: 100%;
+height: 100%;
+opacity: 0;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+line-height:60px;
+	}
+	
+
+/*上传错误删除控件*/
+.kilometre-clear {
+  float:right;
+  position: relative;
+  margin-bottom: 9px;
+  border-left:solid 1px #ECECEC;
+  width: 60px;
+  height: 60px;
+  z-index:0
+}
+
+.kilometre-clear:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #D9D9D9;
+  width: 39.5px;
+  height: 2px;
+}
+
+.kilometre-clear:active {
+  border-color: #999999;
+}
+
+.kilometre-clear:active:after {
+  background-color: #999999;
+}
+.kilometre-clear-input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+#kilometre-fileList{
+	width:95%;
+	height:95%; 
+	margin:auto; 
+	}
+#kilometre-fileList img{
+	width:100% !important;
+	}	
+#kilometre-show {
+	display:block;
+	background-color:#fff;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #dcdcdc;
+	}
+
+/*------------------------------------*/	
+/*微信借入上传图片控件4*/
+.else-input-wrp {
+float: right;
+clear:left;
+background-image:url(../img/canon.png);
+background-repeat:no-repeat;
+background-position:center;
+height: 60px;
+width: 60px;
+border-left:solid 1px #ECECEC;
+}
+else-input-wrp:active {
+  border-color: #999999;
+}
+
+.else-input {
+z-index: 1;
+width: 100%;
+height: 100%;
+opacity: 0;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+line-height:60px;
+	}
+	
+
+/*上传错误删除控件*/
+.else-clear {
+  float:right;
+  position: relative;
+  margin-bottom: 9px;
+  border-left:solid 1px #ECECEC;
+  width: 60px;
+  height: 60px;
+  z-index:0
+}
+
+.else-clear:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #D9D9D9;
+  width: 39.5px;
+  height: 2px;
+}
+
+.else-clear:active {
+  border-color: #999999;
+}
+
+.else-clear:active:after {
+  background-color: #999999;
+}
+.else-clear-input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+#else-fileList{
+	width:95%;
+	height:95%; 
+	margin:auto; 
+	}
+#else-fileList img{
+	width:100% !important;
+	}	
+#else-show {
+	display:block;
+	background-color:#fff;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #dcdcdc;
+	}
+/*-------------------------------------------*/	
+	
+	
+#aftercar-show,#kilometre-show,#else-show {
+	display:block;
+	background-color:#fff;
+	margin-bottom: 10px;
+	border-bottom: solid 1px #dcdcdc;
+	}
+
+
+	
+/*底部*/
+.botton-hide{width:100%;height:98px;}
+.botton{
+	width:100%;
+	height:49px;
+	background-color:#fff;
+	border-top:solid 1px #b2b2b2;
+	overflow:hidden;
+	position:fixed;
+	bottom:0px
+	}
+.botton .affirm,.cancel{ float:left}
+.botton-main{
+	width:225px;
+	height:49px;
+	margin:auto;
+	padding-top: 1.2%;
+	}
+
+/*第一个*/
+ .affirm,.cancel{ 
+ 	display:block;
+	width:93px;
+	height:40px;
+	}
+ .affirm{
+	 background-color:#2a8ae0;
+	 text-align:center;
+	 line-height:40px;
+	 color:#fff;
+	 font-size:2rem;
+	 font-family: "微软雅黑";
+	 border-radius:5px;
+	-moz-box-shadow: 0px 1px 1px #3e75a6;
+    -webkit-box-shadow: 0px 1px 1px #3e75a6;
+    box-shadow: 0px 1px 1px #3e75a6;
+	 }
+.cancel{
+	 background-color:#fff;
+	 text-align:center;
+	 line-height:40px;
+	 color:#848484;
+	 font-size:2rem;
+	 font-family: "微软雅黑";
+	 border-radius:5px;
+	 border:solid 1px #848484;
+	 margin-left:35px;
+	-moz-box-shadow: 0px 1px 1px #d8d8d8;
+    -webkit-box-shadow: 0px 1px 1px #d8d8d8;
+    box-shadow: 0px 1px 1px #d8d8d8;
+	}
+

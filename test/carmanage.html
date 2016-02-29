@@ -1,0 +1,674 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.2.js"></script>
+<style>
+body{ width:100%; height:100%; margin:auto; background-color:#f0f0f0;}
+html{ font-size:10px}
+img,input{ margin:0; padding:0;}
+a{text-decoration:none;color:#595858;}
+.hidens{ width:100%;height:96px}
+.click{ color:#4389c5}
+.chose{ color:#e96b73}
+.ui-loader-default{ display:none;!important}
+.ui-mobile-viewport{ border:none;!important}
+.ui-page {padding: 0; margin: 0; outline: 0;!important}
+/*原始（640）*/
+
+.nav{
+	width:100%;
+	height:48px;
+	background-color:#2a8ae0;
+	-moz-box-shadow: 0px 1px 1px #3e75a6;
+    -webkit-box-shadow: 0px 1px 1px #3e75a6;
+    box-shadow: 0px 1px 1px #3e75a6;
+	position:fixed;
+	}
+.shadow{
+	width:100%;
+	height:48px;
+	}
+.nav .close,.title,.nav-cell{ float:left}		
+.close{
+	height:48px;
+	width:48px;
+	background-image:url(img/close.png);
+	background-repeat:no-repeat; 
+	background-position:center;
+/*这条只是在页面上显示是看的样式，没什么用*/
+	cursor:pointer;
+	}
+.close i{
+	background-image:url(img/close.right@2x-I5.png);		    height:48px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	width:75%;
+	font-family:"Microsoft Yahei";
+	font-size:2.2rem;
+	color:#fff;
+	line-height:48px;
+	text-align:center;
+	}
+.title a{
+	width:48px;
+	height:48px;
+	display:block;
+	background-image:url(img/arrows.png);
+	background-repeat:no-repeat; 
+	background-position: center;
+	position:absolute;
+	top:1%;
+	right:16%;
+	cursor:pointer
+	}
+.nav-cell{
+	height:48px;
+	width:48px;
+	background-image:url(img/nav-cell.png);
+	background-repeat:no-repeat; 
+	background-position:center;
+	float:right;
+	position:absolute;
+	right:10px
+	}
+
+
+/*合同列表顶部*/	
+.lis-title{ 
+	width:100%; 
+	height:50px;
+ 	background-color:#fff;
+	border-bottom:solid 1px #b2b2b2;
+	border-top:solid 1px #e2e2e2;
+	position: fixed;
+	top: 48px;
+	-moz-box-shadow: 0px 1px 1px #b2b2b2;
+    -webkit-box-shadow: 0px 1px 1px #b2b2b2;
+    box-shadow: 0px 0px 1px #b2b2b2;
+	}
+.lis-title a{
+	font-family:"微软雅黑";
+	font-size:2rem;
+	padding-left:20px;
+	line-height:50px;
+	width: 25%;
+	display: block;
+	float: left;
+	text-align:center;
+	}
+.chose-arrow{ 
+	background-image:url(img/chose.png);
+	width: 22px;
+	height: 10px;
+	display: block;
+	position: absolute;
+ 	top: 22px;
+  	right: 15px;
+	}	
+/*合同列表*/
+.lis{
+	width:100%;
+	height:100%;
+	}
+.lis-main{
+	width:97%;
+	margin:auto;
+	margin-top:13px;
+	background-color:#fff;
+	border:solid 1px #e7e6e6;
+	overflow:hidden
+	}
+.markedness{ 
+	overflow:hidden;margin: 3% 0 0 3%; 
+	border-bottom:dashed 1px #d9d9d9;
+	padding-bottom: 1rem;
+	}
+.markedness img,.serial{ float:left}
+.markedness img{
+	padding-top:0.2rem;
+	}
+.serial{
+	font-family:"微软雅黑";
+	font-size:2.3rem;
+	color:#686868;
+	margin-left:2rem
+	}
+.contract,.contract-right{
+	float:left;
+	}
+.contract{
+	width: 92%;
+	color: #9a9a99;
+	font-family: "微软雅黑";
+	font-size: 2rem;
+	margin: 0.5rem 0 0 1.5rem;
+	letter-spacing:0.1rem
+	}
+.contract a{color: #9a9a99;}
+.contract div{
+	margin-top:3px
+	}
+.filiale{
+	margin-left:2rem;
+	}
+.contract-right{
+	color: #9a9a99;
+	font-family: "微软雅黑";
+	font-size: 2rem;
+	margin: 0 0 1.5rem 1.5rem;
+	letter-spacing:0.1rem
+	}
+.contract-right a{
+	color:#e96b73;
+	}	
+.GPS{
+	margin-left:3.8rem;
+	}
+	
+/*底部*/
+/*---------*/
+.botton-hide{height:51px}
+botton{
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height:49px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	border-top: 1px solid #b2b2b2;
+	text-align: center;
+	padding: 2px 0;
+}
+botton>a{
+	padding-top: 30px;
+	font-size: 1.5rem;
+}
+.btm-l{
+	float: left;
+	width: 25%;
+	text-align: center;
+	background-image:url(img/message.png);
+	background-repeat:no-repeat; 
+	background-position:center 2px;	
+}
+.btm-l-cur{
+	float: left;
+	width: 25%;
+	background-image:url(img/message.png);
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.btm-c{
+	display: inline-block;
+	width: 30%;
+	color: #4389c5;
+	background-image:url(img/homeblue.png); 
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.btm-c-cur{
+	color: #36B9AF;
+	background: url(../img/footer_middle_b.png);
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.btm-r{
+	float: right;
+	width: 25%;
+	text-align: center;
+	background-image:url(img/me.png);
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.btm-r-cur{
+	color: #36B9AF;
+	background: url(../img/footer_right_b.png);
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+
+/*屏幕宽度大于750px小于1080px时(-webkit-min-device-pixel-ratio:2)*/	
+@media screen and (min-width: 751px) and (max-width:1080px){
+.hidens{ width:100%;height:196px}
+.nav{
+	height:132px;
+	background-color:#2a8ae0;;
+	}	
+.close{
+	height:132px;
+	margin-left:20px;
+	background-image:url(img/close@2x.png);
+	}
+.close i{
+	background-image:url(img/close.right@2x-I6.png);
+	width:100px;
+	height:132px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	font-size:4rem;
+	line-height:132px;
+	width:70%;
+	}
+.title a{
+	top:23px;
+	right:20%;
+	background-image:url(img/arrows@3x.png);
+	}	
+.nav-cell{
+	height:132px;
+	width:88px;
+	background-image:url(img/nav-cell@3x.png);
+	margin-right:15px
+	}
+.lis-title{ 
+	position: fixed;
+	top: 133px;
+	height:60px;
+	}
+.lis-title a{
+	font-size:3.3rem;
+	padding-left:20px;
+	line-height:60px;
+	width: 30%;
+	}
+.chose-arrow{ 
+	background-image:url(img/chose@3x.png);
+	width: 29px;
+	height: 14px;
+	position:fixed;
+	top: 158px;
+	right:120px;
+	}	
+}
+
+
+/*屏幕宽度大于1080px小于1242px时(-webkit-min-device-pixel-ratio:2)*/	
+@media screen and (min-width: 1080px) and (max-width:1242px){
+.hidens{ width:100%;height:196px}
+.nav{
+	height:132px;
+	background-color:#2a8ae0;;
+	}	
+.close{
+	height:132px;
+	margin-left:20px;
+	background-image:url(img/close@2x.png);
+	}
+.close i{
+	background-image:url(img/close.right@2x-I6.png);
+	width:100px;
+	height:132px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	font-size:5.2rem;
+	line-height:132px;
+	width:80%;
+	}
+.title a{
+	top:23px;
+	right:26%;
+	background-image:url(img/arrows@3x.png);
+	}	
+.nav-cell{
+	height:132px;
+	width:88px;
+	background-image:url(img/nav-cell@3x.png);
+	margin-right:15px
+	}
+.lis-title{ 
+	position: fixed;
+	top: 133px;
+	height:60px;
+	}
+.lis-title a{
+	font-size:3.6rem;
+	padding-left:20px;
+	line-height:60px;
+	width: 30%;
+	}
+.chose-arrow{ 
+	background-image:url(img/chose@3x.png);
+	width: 29px;
+	height: 14px;
+	position:fixed;
+	top: 158px;
+	right:120px;
+	}
+.markedness img{
+	padding-top:0.5rem;
+	}
+.contract{
+	font-size: 2.2rem;
+	margin: 2rem 0 2rem 4.6rem;
+	letter-spacing:0.1rem
+	}	
+.serial{
+	font-size:2.6rem;
+	color:#686868;
+	}
+.contract-right{
+	font-size: 2.2rem;
+	margin: 7.5rem 3rem 0 0;
+	letter-spacing:0.1rem
+	}	
+.GPS{
+	margin-left:3.9rem
+	}	
+/*-------------------*/
+
+/*底部*/
+.botton{
+	height:146px;
+	position:fixed;
+	bottom:0;
+	}
+/*第一个*/
+.message{
+	width:33%;
+	margin-top:2%
+	}	
+.message-icon{ 
+	height:75px;
+	background-image:url(img/message@3x.png);
+	}
+.message a{
+	font-size:3rem;
+	margin-top: 1%;
+	}
+/*第二个*/		
+.home{
+	width:33%;
+    margin-top:2%
+	}	
+.home-icon{ 
+	height:75px;
+	background-image:url(img/homeblue@3x.png);
+	}
+.home a{
+	font-size:3rem;
+	margin-top: 1%;
+	}
+/*第三个*/
+.me{
+	width:33%;
+	margin-top:2%
+	}	
+.me-icon{ 
+	height:75px;
+	background-image:url(img/me@3x.png);
+	}
+.me a{
+	font-size:3rem;
+	margin-top: 1%;
+	}
+
+}
+</style>
+
+
+<body>
+<div class="nav">
+    <a class="close"><i></i></a>
+    <div class="title">资料库列表</div>
+    <div class="nav-cell"></div>
+</div>
+
+<div class="hidens"></div>
+<div class="index-main">
+
+    
+    <div class="lis-title">
+    <a href="#">已审批</a>
+    <a href="#">未审批</a>
+    <a href="#" class="chose">筛选<i class="chose-arrow"></i></a>
+    </div>
+    
+    <div class="lis">
+    	<div class="lis-main">
+        	<div class="markedness">
+            	 <img src="img/markedness.png">
+                 <div class="serial">自编号：
+              	 <a>SZZ00092</a>
+              	 </div>
+            </div>
+            <div class="contract">
+              <div class="filiale">分公司：
+              <a>总部大客户中心</a>
+              </div>
+              <div class="Vehicle-Brand">车辆品牌：
+              <a>一汽奥迪</a>
+              </div>
+               <div class="Vehicle-Models">车辆型号：
+              <a>奥迪 A6L2.8  舒适娱乐</a>
+              </div>
+               <div class="car-number">车牌号码：
+              <a>苏E91A97</a>
+              </div>
+            </div>
+            <div class="contract-right">
+            	<div class="GPS">GPS：
+                <a>在线</a>
+                </div>
+                <div class="vehicle-status">车辆状态：
+                <a>可租</a>
+                </div>
+            </div>
+      </div>
+  <div class="lis-main">
+        	<div class="markedness">
+            	 <img src="img/markedness.png">
+                 <div class="serial">自编号：
+              	 <a>SZZ00092</a>
+              	 </div>
+            </div>
+            <div class="contract">
+              <div class="filiale">分公司：
+              <a>总部大客户中心</a>
+              </div>
+              <div class="Vehicle-Brand">车辆品牌：
+              <a>一汽奥迪</a>
+              </div>
+               <div class="Vehicle-Models">车辆型号：
+              <a>奥迪 A6L2.8  舒适娱乐</a>
+              </div>
+               <div class="car-number">车牌号码：
+              <a>苏E91A97</a>
+              </div>
+            </div>
+            <div class="contract-right">
+            	<div class="GPS">GPS：
+                <a>在线</a>
+                </div>
+                <div class="vehicle-status">车辆状态：
+                <a>可租</a>
+                </div>
+            </div>
+      </div>
+     <div class="lis-main">
+        	<div class="markedness">
+            	 <img src="img/markedness.png">
+                 <div class="serial">自编号：
+              	 <a>SZZ00092</a>
+              	 </div>
+            </div>
+            <div class="contract">
+              <div class="filiale">分公司：
+              <a>总部大客户中心</a>
+              </div>
+              <div class="Vehicle-Brand">车辆品牌：
+              <a>一汽奥迪</a>
+              </div>
+               <div class="Vehicle-Models">车辆型号：
+              <a>奥迪 A6L2.8  舒适娱乐</a>
+              </div>
+               <div class="car-number">车牌号码：
+              <a>苏E91A97</a>
+              </div>
+            </div>
+            <div class="contract-right">
+            	<div class="GPS">GPS：
+                <a>在线</a>
+                </div>
+                <div class="vehicle-status">车辆状态：
+                <a>可租</a>
+                </div>
+            </div>
+      </div> 
+      
+      <div class="lis-main">
+        	<div class="markedness">
+            	 <img src="img/markedness.png">
+                 <div class="serial">自编号：
+              	 <a>SZZ00092</a>
+              	 </div>
+            </div>
+            <div class="contract">
+              <div class="filiale">分公司：
+              <a>总部大客户中心</a>
+              </div>
+              <div class="Vehicle-Brand">车辆品牌：
+              <a>一汽奥迪</a>
+              </div>
+               <div class="Vehicle-Models">车辆型号：
+              <a>奥迪 A6L2.8  舒适娱乐</a>
+              </div>
+               <div class="car-number">车牌号码：
+              <a>苏E91A97</a>
+              </div>
+            </div>
+            <div class="contract-right">
+            	<div class="GPS">GPS：
+                <a>在线</a>
+                </div>
+                <div class="vehicle-status">车辆状态：
+                <a>可租</a>
+                </div>
+            </div>
+      </div>
+      
+      <div class="lis-main">
+        	<div class="markedness">
+            	 <img src="img/markedness.png">
+                 <div class="serial">自编号：
+              	 <a>SZZ00092</a>
+              	 </div>
+            </div>
+            <div class="contract">
+              <div class="filiale">分公司：
+              <a>总部大客户中心</a>
+              </div>
+              <div class="Vehicle-Brand">车辆品牌：
+              <a>一汽奥迪</a>
+              </div>
+               <div class="Vehicle-Models">车辆型号：
+              <a>奥迪 A6L2.8  舒适娱乐</a>
+              </div>
+               <div class="car-number">车牌号码：
+              <a>苏E91A97</a>
+              </div>
+            </div>
+            <div class="contract-right">
+            	<div class="GPS">GPS：
+                <a>在线</a>
+                </div>
+                <div class="vehicle-status">车辆状态：
+                <a>可租</a>
+                </div>
+            </div>
+      </div>
+      
+      <div class="lis-main">
+        	<div class="markedness">
+            	 <img src="img/markedness.png">
+                 <div class="serial">自编号：
+              	 <a>SZZ00092</a>
+              	 </div>
+            </div>
+            <div class="contract">
+              <div class="filiale">分公司：
+              <a>总部大客户中心</a>
+              </div>
+              <div class="Vehicle-Brand">车辆品牌：
+              <a>一汽奥迪</a>
+              </div>
+               <div class="Vehicle-Models">车辆型号：
+              <a>奥迪 A6L2.8  舒适娱乐</a>
+              </div>
+               <div class="car-number">车牌号码：
+              <a>苏E91A97</a>
+              </div>
+            </div>
+            <div class="contract-right">
+            	<div class="GPS">GPS：
+                <a>在线</a>
+                </div>
+                <div class="vehicle-status">车辆状态：
+                <a>可租</a>
+                </div>
+            </div>
+      </div>
+      
+      
+         
+    </div>  
+</div>
+
+
+
+<!--底部-->
+<div class="botton-hide"></div>
+<botton>
+    <a class="btm-l-cur">消息</a>
+    <a class="btm-c" href="#">首页</a>
+    <a class="btm-r" href="#">我的</a>
+</botton>
+
+
+
+
+
+
+<script>
+//重要
+$("input").attr('data-role','none');  
+$("select").attr('data-role','none'); 
+
+
+	$(".close").on("tap",function(){
+		window.location.href='index.html'
+		})
+	$(".lis-main").on("tap",function(){
+		window.location.href='check.html'
+		})
+	
+//筛选项
+	$(".lis-title a").on("tap",function(){
+		$(".lis-title a").removeClass("chose")
+		$(this).addClass("chose")
+		})
+
+//底部
+		$(".botton a").on("tap",function(){
+		$(".botton a").removeClass("click")
+		$(this).addClass("click")
+		})
+</script>
+</body>
+</html>

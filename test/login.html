@@ -1,0 +1,328 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style>
+body{ width:100%; height:100%; margin:auto;  background-color: #f3f3f3;}
+html{ font-size:10px}
+img,input{ margin:0; padding:0;}
+a{ text-decoration:none}
+input {outline:none;}
+/*原始（640）*/
+/*.login-top{ 
+	width:100%; 
+	height:40px;
+	background-color:#000;
+	overflow:hidden;
+	color:#fff;
+	font-family:"Microsoft Yahei";
+	font-size:2.8rem;
+	text-align:center;
+	line-height:40px
+	}*/
+ 
+
+.login-top .left{
+	float:left
+	}
+.login-top .right{
+	float:right;
+	}
+.login-nav{
+	width:100%;
+	height:48px;
+	background-color:#2a8ae0;
+	position:fixed;
+	top:0;
+	-moz-box-shadow: 0px 1px 1px #3e75a6;
+    -webkit-box-shadow: 0px 1px 1px #3e75a6;
+    box-shadow: 0px 1px 1px #3e75a6;
+	}
+.login-shadow{
+	width:100%;
+	height:48px;
+	}
+.login-nav .close,.title{ float:left}		
+.close{
+	height:48px;
+	width:48px;
+	background-image:url(img/close.png);
+	background-repeat:no-repeat; 
+	background-position:center;
+	}
+.close i{
+	background-image:url(img/close.right@2x-I5.png);		    height:48px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	width:75%;
+	font-family:"Microsoft Yahei";
+	font-size:2.5rem;
+	color:#fff;
+	line-height:48px;
+	text-align:center;
+	}
+
+.login-main{
+	width:100%;
+	height:100%;
+	background-color:#f3f3f3;
+	}
+.login-input{
+	width:80%; 
+	margin:auto;
+	padding-top:20px;
+	overflow:hidden;
+	}
+.login-input input{font-size:2rem; font-family:"Microsoft Yahei"; color:#848484}
+.input-box{ overflow:hidden; padding:0 2px;}
+.ID,.password,.auth{
+	border-radius:5px;
+	border:solid 1px #d6d6d6;
+	margin-top:10px;
+	padding-left:10px
+	}
+/*输入框阴影*/
+.ID:focus{
+border:#87C6F9 1px solid;
+box-shadow: 0 0 3px rgba(103, 166, 217, 1);
+ }
+.password:focus{
+border:#87C6F9 1px solid;
+box-shadow: 0 0 3px rgba(103, 166, 217, 1);
+ }
+.auth:focus{
+border:#87C6F9 1px solid;
+box-shadow: 0 0 3px rgba(103, 166, 217, 1);
+ }
+.ID,.password{
+	width:96%;
+	height:38px;
+	}
+.auth,.gain{ 
+	float:left
+	}
+.auth{
+	width:45%;
+	height:40px;
+	}
+.gain{
+	background-color:#2a8ae0;
+	width:45%;
+	height:40px;
+	display:block;
+	text-align:center;
+	line-height:40px;
+	color:#fff;
+	font-family: "Microsoft Yahei";
+	font-size:2rem;
+	float: right;
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor:pointer;
+	}
+.login-botton{
+	width:100%;
+	height:40px;
+	background-color:#2a8ae0;
+	color:#fff;
+	font-family:"Microsoft Yahei";
+	font-size:2.5rem;
+	display:block;
+	text-align:center;
+	line-height:40px;
+	border-radius:5px;
+	margin-top:20px
+	}
+.forget{
+	color:#2a8ae0;
+	font-size:2.2rem;
+	float:right;
+	font-family:"Microsoft Yahei";
+	margin-top:20px;
+	display:block;
+	}
+
+/*屏幕宽度大于750px小于1080px时(-webkit-min-device-pixel-ratio:2)*/	
+@media screen and (min-width: 751px) and (max-width:1080px){	
+.login-nav{
+	height:66px;
+	background-color:#2a8ae0;;
+	}
+.login-shadow{
+	height:66px;
+	top:0;
+	}	
+.close{
+	height:66px;
+	margin-left:20px;
+	background-image:url(img/close@2x.png);
+	}
+.close i{
+	background-image:url(img/close.right@2x-I6.png);
+	width:66px;
+	height:66px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	font-size:3.5rem;
+	line-height:66px;
+	width:81%;
+	}
+
+.login-main{
+	width:100%;
+	height:100%;
+	}
+.login-input{
+	width:80%; 
+	margin:auto;
+	padding-top:35px
+	}
+.login-input input{font-size:2.3rem;}
+.login-input input:hover{font-size:2.3rem}
+.input-box{ overflow:hidden; padding:0 2px;}
+.ID,.password,.auth{
+	margin-top:15px
+	}
+.ID,.password{
+	height:45px;
+	width:97%;
+	}
+.auth{
+	width:50%;
+	height:45px;
+	}
+.gain{
+	width:45%;
+	height:45px;
+	line-height:45px;
+	font-size:2.3rem;
+	margin-top: 15px;
+	}
+.login-botton{
+	width:100%;
+	height:50px;
+	font-size:2.6rem;
+	line-height:50px;
+	margin-top:40px
+	}
+.forget{
+	font-size:3rem;
+	margin-top:20px;
+	}
+		}
+
+@media screen and (min-width: 1081px) and (max-width:1242px){
+.login-nav{
+	height:66px;
+	background-color:#2a8ae0;;
+	}
+.login-shadow{
+	height:66px;
+	top:0;
+	}	
+.close{
+	height:66px;
+	margin-left:20px;
+	background-image:url(img/close@2x.png);
+	}
+.close i{
+	background-image:url(img/close.right@2x-I6.png);
+	width:66px;
+	height:66px;
+	display:block;
+	background-repeat:no-repeat; 
+	background-position: right;
+	}
+.title{
+	font-size:3.5rem;
+	line-height:66px;
+	width:81%;
+	}
+
+.login-main{
+	width:100%;
+	height:100%;
+	}
+.login-input{
+	width:80%; 
+	margin:auto;
+	padding-top:35px
+	}
+.login-input input{font-size:2.5rem;}
+.login-input input:hover{font-size:2.5rem}
+.ID,.password,.auth{
+	margin-top:20px
+	}
+.auth{
+	width:50%;
+	height:50px;
+	}
+.gain{
+	width:45%;
+	height:50px;
+	line-height:50px;
+	font-size:2.5rem;
+	margin-top: 20px;
+	}
+.login-botton{
+	width:100%;
+	height:50px;
+	font-size:3rem;
+	line-height:50px;
+	margin-top:40px
+	}
+.forget{
+	font-size:3rem;
+	margin-top:20px;
+	}
+}
+
+</style>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<!--<div class="login-top">
+<img src="img/left.png" class="left">
+4:21pm
+<img src="img/right.png" class="right">
+</div>-->
+
+<div class="login-nav">
+    <div class="close"><i></i></div>
+    <div class="title">登录</div>
+</div>
+<div class="login-shadow"></div>
+
+
+
+<div class="login-main">
+    <div class="login-input">
+        <div class="input-box">
+        <input class="ID" type="text" maxlength="20" placeholder="请输入账号" >
+        <input class="password" type="password" maxlength="6" placeholder="请输入密码">
+        <input class="auth" type="text" maxlength="4" placeholder="请输入验证码">
+        <a href="#" class="gain">点击获取验证码</a>
+        </div>
+
+        <a href="index.html" class="login-botton">登录</a>
+        <a href="#" class="forget">忘记密码</a>
+       
+    </div>	  
+</div>
+<script>
+	$(".close").click(function(){
+		alert("你确定要关闭吗？");
+		$(window).css("display","none")
+		})
+</script>
+</body>
+</html>

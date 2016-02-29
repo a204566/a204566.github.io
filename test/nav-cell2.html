@@ -1,0 +1,456 @@
+﻿<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<link rel="stylesheet" href="css/check.css"/>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.2.js"></script>
+<script src="js/classie.js"></script>
+<!--<script src="js/zepto.min.js"></script>
+<script src="js/example.js"></script>-->
+<style>
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #fff;
+	position: fixed;
+	box-shadow: -1px 0px 1px #949494;
+}
+
+.cbp-spmenu h3 {
+	font-family:"微软雅黑";
+	color: #404040;
+	font-size: 2em;
+	padding: 20px 20px 15px 15px;
+	margin: 0;
+	font-weight: 300;
+	background: #fff;
+	border-bottom:1px dashed #d9d9d9;
+}
+
+.cbp-spmenu a {
+	font-family:"微软雅黑";
+	display: block;
+	color: #9a9a99;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	padding-left:10px
+}
+
+.cbp-spmenu a:active {
+	background: #eae9e9;
+	color: #dd434d;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 48px;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #cdcdcd;
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+.botton-left{
+	left:-240px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+#cover{
+	width:100%; 
+	height:100%; 
+	background-color:#000;
+	z-index: 0;
+	opacity: 0.3;
+	position: fixed;
+}
+</style>
+<div id="cover"></div>
+<body class="cbp-spmenu-push">
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<h3>资料库</h3>
+			<a href="#">资料库列表</a>
+			<a href="#">登记证扫描件列表</a>
+			<a href="#">指标列表</a>
+			<a href="#">车辆抵押列表</a>
+			<a href="#" class="click">车辆盘点列表</a>
+			<a href="#">车辆状态相关报表核对</a>
+            <a href="#">车辆年审列表</a>
+		</nav>
+        
+
+<div class="container">        
+<div class="nav">
+    <div class="close"><i></i></div>
+    <div class="title">车辆盘点列表</div>
+    <button id="nav-cell"></button>
+</div>
+
+<div class="hidens"></div>
+<div class="index-main">
+  
+  <div class="check-nav">
+    <div class="Inventory-icon"></div>
+    <div class="Inventory-people">
+    	<div>实盘人：<a>李小白</a></div>
+        <div>监盘人：<a>李小白</a></div>
+        <div>实盘人：<a>李小白</a></div>
+    </div>
+</div>
+    
+    <div class="check">
+    	<div class="check-main">
+        	
+            <div class="Review-contract">
+              <div class="license-number">车牌号码：
+              <a>云AN6J52</a>
+              </div>
+              <div class="address">实际地址：
+              <a>云南大库-云南省昆明市盘龙区星雅俊园6栋2302室</a>
+              </div>
+               <div class="remark">实盘人备注：
+              <input>
+              </div>
+               <div class="remark">监盘人备注：
+              <input>
+               </div>
+            </div>
+      </div>
+  
+	<div class="photo" data-enhance=false>
+      <div class="limber">前车照片
+        <div class="limber-input-wrp">
+        <input class="limber-input"type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple  />
+        </div>
+         <div class="limber-clear">
+      		 <input class="limber-clear-input" type="button" />
+ 		 </div>
+
+          </div> 
+     <a id="limber-show">
+      <div id="limber-fileList"></div> 
+     </a>
+    
+       <div class="aftercar">后车照片
+        <div class="aftercar-input-wrp">
+        <input class="aftercar-input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple/>
+        </div>
+         <div class="aftercar-clear">
+      		 <input class="aftercar-clear-input" type="button" />
+ 		 </div>
+          </div> 
+     <a id="aftercar-show">
+      <div id="aftercar-fileList"></div> 
+     </a>
+   
+     <div class="kilometre">公里数照片
+     	<div class="kilometre-input-wrp">
+        <input class="kilometre-input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple/>
+        </div>
+         <div class="kilometre-clear">
+      		 <input class="kilometre-clear-input" type="button" />
+ 		 </div>
+          </div> 
+     <a id="kilometre-show">
+      <div id="kilometre-fileList"></div> 
+     </a>
+     
+     
+     <div class="else">其它状态照片
+      <div class="else-input-wrp">
+        <input class="else-input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple/>
+        </div>
+         <div class="else-clear">
+      		 <input class="else-clear-input" type="button" />
+ 		 </div>
+          </div> 
+     <a id="else-show">
+      <div id="else-fileList"></div> 
+     </a>
+        
+     </div>
+   </div>
+    
+    </div>  
+
+<!--底部-->
+<div class="botton-hide"></div>
+<div class="botton">
+   <div class="botton-main">
+	<a class="affirm" href="#">确认</a>	
+    <a class="cancel" href="#">取消</a>
+   </div>
+</div>
+
+</div>
+
+<script>
+//重要 
+$("input").attr('data-role','none');  
+$("select").attr('data-role','none'); 
+	
+		
+	$(".close").on("tap",function(){
+  		window.location.href='login.html'
+		});	
+		
+
+	$(".carmanage").on("tap",function(){
+		window.location.href='carmanage.html'
+		})
+//筛选项
+	$(".lis-title a").on("tap",function(){
+		$(".lis-title a").removeClass("chose")
+		$(this).addClass("chose")
+		})
+
+//底部
+		$(".botton a").on("tap",function(){
+		$(".botton a").removeClass("click")
+		$(this).addClass("click")
+		})
+
+
+//--------------------------------
+//前车照片
+$(".limber-clear").hide()
+$("#limber-show ").hide()
+       $(function() {
+                $('.limber-input').change(function() {
+                    var file = this.files[0];
+                    var r = new FileReader();
+                    r.readAsDataURL(file);
+                    $(r).load(function() {
+                        $('#limber-fileList').html('<img src="' + this.result + '" alt="" />');
+						 $("#limber-show").show();
+			 			 $(".limber-input-wrp").hide();
+			  			 $(".limber-clear").show();
+						 $(".limber").css({"color":"#e95b65"})
+						 
+                    })
+                })
+            })
+//--------------------------------
+
+//清除图片
+$(".limber-clear").click(function(){
+	$("#limber-fileList").empty();
+	$("#limber-show").hide();
+	$(".limber-input-wrp").show();
+	$(".limber-clear").hide();
+	 $(".limber").css({"color":"#6b6b6b"})
+	})
+	
+	
+//--------------------------------
+//后车照片
+$(".aftercar-clear").hide()
+$("#aftercar-show ").hide()
+       $(function() {
+                $('.aftercar-input').change(function() {
+                    var file = this.files[0];
+                    var r = new FileReader();
+                    r.readAsDataURL(file);
+                    $(r).load(function() {
+                        $('#aftercar-fileList').html('<img src="' + this.result + '" alt="" />');
+						 $("#aftercar-show").show();
+			 			 $(".aftercar-input-wrp").hide();
+			  			 $(".aftercar-clear").show();
+						 $(".aftercar").css({"color":"#e95b65"})
+                    })
+                })
+            })
+//--------------------------------
+
+//清除图片
+$(".aftercar-clear").click(function(){
+	$("#aftercar-fileList").empty();
+	$("#aftercar-show").hide();
+	$(".aftercar-input-wrp").show();
+	$(".aftercar-clear").hide();
+	$(".aftercar").css({"color":"#6b6b6b"})
+	})
+	
+	
+//--------------------------------	
+//公里数照片
+$(".kilometre-clear").hide()
+$("#kilometre-show ").hide()
+       $(function() {
+                $('.kilometre-input').change(function() {
+                    var file = this.files[0];
+                    var r = new FileReader();
+                    r.readAsDataURL(file);
+                    $(r).load(function() {
+                        $('#kilometre-fileList').html('<img src="' + this.result + '" alt="" />');
+						 $("#kilometre-show").show();
+			 			 $(".kilometre-input-wrp").hide();
+			  			 $(".kilometre-clear").show();
+						 $(".kilometre").css({"color":"#e95b65"})
+                    })
+                })
+            })
+//--------------------------------
+
+//清除图片
+$(".kilometre-clear").click(function(){
+	$("#kilometre-fileList").empty();
+	$("#kilometre-show").hide();
+	$(".kilometre-input-wrp").show();
+	$(".kilometre-clear").hide();
+	$(".kilometre").css({"color":"#6b6b6b"})	
+	})
+	
+	
+
+//--------------------------------	
+//其他数照片
+$(".else-clear").hide()
+$("#else-show ").hide()
+       $(function() {
+                $('.else-input').change(function() {
+                    var file = this.files[0];
+                    var r = new FileReader();
+                    r.readAsDataURL(file);
+                    $(r).load(function() {
+                        $('#else-fileList').html('<img src="' + this.result + '" alt="" />');
+						 $("#else-show").show();
+			 			 $(".else-input-wrp").hide();
+			  			 $(".else-clear").show();
+						 $(".else").css({"color":"#e95b65"})
+                    })
+                })
+            })
+//--------------------------------
+
+//清除图片
+$(".else-clear").click(function(){
+	$("#else-fileList").empty();
+	$("#else-show").hide();
+	$(".else-input-wrp").show();
+	$(".else-clear").hide();
+	$(".else").css({"color":"#6b6b6b"})
+	})
+
+
+
+
+//------------------------------------------------
+//侧栏
+$("#cover").hide()
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRight = document.getElementById( 'nav-cell' ),
+				body = document.body;
+
+		
+			showRight.onclick = function() {
+				$("#cover").toggle()
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+				$(body).css({"overflow-y":"hidden"})
+			};
+			
+			
+//黑屏
+			$("#cover").click(function(){
+				$("#cover").toggle()
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+				})
+
+//-------------
+$("#cbp-spmenu-s2 a").on("tap",function(){
+		$("#cbp-spmenu-s2 a").removeClass("click")
+		$(this).addClass("click")
+		})
+
+		</script>
+</body>
+</html>
