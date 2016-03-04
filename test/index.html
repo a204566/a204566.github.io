@@ -129,11 +129,11 @@
       
     </div> 
 <!--底部-->
-<botton>
-    <a class="btm-l-cur" href="#">消息</a>
-    <a class="btm-c" href="#">首页</a>
-    <a class="btm-r" href="#">我的</a>
-</botton>
+<div class="botton">
+    <a class="btm-l"  id="dh_1" href="#">消息</a>
+    <a class="btm-c-cur"  id="dh_2" href="#">首页</a>
+    <a class="btm-r"  id="dh_3"  href="#">我的</a>
+</div>
 
 
 
@@ -169,10 +169,27 @@ $("select").attr('data-role','none');
      
        
  //底部
-		$(".botton a").on("tap",function(){
-		$(".botton a").removeClass("click")
-		$(this).addClass("click")
-		})   	
+var obth=document.getElementById("dh_1");
+var bth_2=document.getElementById("dh_2");
+var bth_3=document.getElementById("dh_3");
+
+function init(){
+	obth.className ="btm-l";
+	bth_2.className ="btm-c";
+	bth_3.className ="btm-r";
+	}
+obth.onclick=function(){
+init();
+obth.className="btm-l-cur";
+}
+bth_2.onclick=function(){
+init();
+bth_2.className="btm-c-cur";
+}
+bth_3.onclick=function(){
+init();
+bth_3.className="btm-r-cur";
+}   	
        
         
 //------------------------------------------------

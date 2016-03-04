@@ -238,11 +238,6 @@
 
 <!--底部-->
 <div class="botton-hide"></div>
-<botton>
-    <a class="btm-l-cur" href="#">消息</a>
-    <a class="btm-c" href="#">首页</a>
-    <a class="btm-r" href="#">我的</a>
-</botton>
 
 
 
@@ -258,22 +253,18 @@ $("select").attr('data-role','none');
 	$(".close").on("tap",function(){
 		window.location.href='index.html'
 		})
-	$(".lis-main").on("tap",function(){
-		window.location.href='check.html'
-		})
+	//$(".lis-main").on("tap",function(){
+//		window.location.href='check.html'
+//		})
 	
 //筛选项
 	$(".lis-title a").on("tap",function(){
 		$(".lis-title a").removeClass("chose")
 		$(this).addClass("chose")
 		})
+	
 
-//底部
-		$(".botton a").on("tap",function(){
-		$(".botton a").removeClass("click")
-		$(this).addClass("click")
-		})
-		
+
 //------------------------------------------------
 //侧栏
 $("#cover").hide()
