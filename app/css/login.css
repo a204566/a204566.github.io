@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ 
+	margin:0; 
+	padding:0; 
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{ font-size:10px}
+ul,ol{ list-style:none;margin:0; padding:0;}
+p,a,span{margin:0; padding:0;}
+a{text-decoration:none; border: 0}
+img{border:0;}
+body{ width:100%; height:100%; background-image:url(../images/bg.png); background-repeat:no-repeat; background-size:cover}
+input{ outline:none}
+/*隐藏默认的checkbox*/
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+
+/*宽度414*/
+.logo{ 
+	position:absolute;
+	top: 80px;
+    left: 100px;
+	background-image:url(../images/car_logo.png);	background-repeat:no-repeat;
+	width: 200px;
+  	height: 200px;
+ 	background-size: 200px auto;
+	}
+
+
+/*输入框*/
+.co-contain{ margin-top:20rem; width:100%;z-index: 1 ;position: absolute;}
+.login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:40px; border-radius:5px; border-bottom:none;}
+.login-box2{background:#fff; width:90%; margin:0 auto;height:40px; border-radius:5px;  margin-top: 20px;}
+.login-put{ width:100%;position:relative;}
+.pwd-put{ width:100%;position:relative;}
+.line{ background-image:url(../images/weixin_login_input.png);width: 2px;height: 25px;position: absolute;top: 0.7rem;
+ left: 3.8rem; display:block}
+.login-input{ height:40px; line-height:40px; width:100%; border-radius:5px ; border-bottom:none; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484;border:1px solid #dedede;}
+.login-input2{ height:40px; line-height:25px; width:100%; border-radius:5px; border-bottom:none; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484;}
+.pwd-input{  height:40px; line-height:40px; width:100%; border-radius: 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede; border-radius:5px;background:#fff;}
+.pwd-input2{  height:40px; line-height:25px; width:100%; border-radius:5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede;}
+		
+
+		
+			
+	
+.fa{
+	 line-height:3rem;
+	 text-align:center; 
+	 font-family:"Microsoft Yahei" ; 
+	 font-size:2.2rem;
+	 color:#fff
+	}
+
+/*按钮*/
+.co-bottom{ margin-top:6rem; width:100%;}
+.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
+
+.login-other{ width:80%; margin:15px auto; overflow:hidden}
+.login-other a{ font-style:normal;font-family:"Microsoft Yahei" ; font-size:2.5rem; color:#fff; display:block;}
+.login-other .login-forgetpwd{ float:right;}		
+.login-other .login-regedit,.login-line,.login-forgetpwd{ float:left}
+
+
+.bg{
+	  background-color: black;
+ 	  width: 95%;
+  	  height: 350px;
+  	  margin: auto;
+  	  opacity: 0.4;
+  	  position: absolute;
+  	  top: 17rem;
+ 	  left: 0.9rem;
+  	  z-index: 0;
+	  border-radius: 10px;
+}
+@media screen and (min-width: 375px) and (max-width:413px){	
+.logo{ 
+	top: 40px;
+    left: 85px;
+ 	background-size: 180px auto;
+	}
+/*输入框*/
+.co-contain{ margin-top:15rem;}
+.bg{
+  	  height: 330px;
+  	  top: 13rem;
+ 	  left: 0.8rem;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width:374px){	
+html{ font-size:9px}
+.logo{ 
+	top: 40px;
+    left: 60px;
+ 	background-size: 180px auto;
+	}
+/*-----------------------------------*/
+
+/*输入框*/
+.co-contain{ margin-top: 14rem;}
+.login-box2 {margin-top: 15px;}
+  
+  
+/*按钮*/
+.co-bottom{ margin-top:5rem; width:100%;}
+.login-other a{  font-size:2.2rem;}
+
+/*勾选框*/
+.checkboxFive {
+	margin: 5px 0px 0px 0px;
+	position: relative;
+}
+.checkboxFive label {
+	width: 20px;
+	height: 20px;
+	top: 6px;
+	left: 90px;
+}
+.checkboxFive label:after {
+	top: 3px;
+	left: 2px;
+	width: 11px;
+} 
+.checkboxFive input[type=checkbox]:checked + label:after {
+	top: 3px;
+	left: 2px;
+}
+.fa{
+	 line-height:3rem;
+	 font-size:2.2rem;
+	}
+.bg{
+  	  height: 300px;
+  	  top: 12rem;
+ 	  left: 0.7rem;
+
+}
+		}

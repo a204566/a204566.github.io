@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+/*输入框*/
+.co-contain{ margin-top:3rem; width:100%; z-index:0}
+.login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:70px; border-radius:5px 5px 0px 0px; border-bottom:none;}
+.login-box2{background:#fff; width:90%; margin:0 auto;height:70px; border-radius:0px 0px 5px 5px;  margin-top: 20px;}
+.login-put{ width:100%;position:relative;}
+.pwd-put{ width:100%;position:relative;}
+
+
+.login-input2{ height:40px; line-height:40px; width:100%; border-radius:5px 5px 0px 0px ; border-bottom:none; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484;}
+.pwd-input{  height:40px; line-height:40px; width:100%; border-radius: 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede; border-radius:5px;background:#fff;}
+.pwd-input2{  height:40px; line-height:40px; width:100%; border-radius:0px 0px 5px 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede;}
+.vertify-input{ width:58%; }
+
+
+			
+.co-bottom{ margin-top:3rem; width:100%;}
+.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
+	
+		
+/*-----------------------*/
+.agree{  
+  font-family: "Microsoft Yahei";
+  font-size: 1.6rem;
+  color: #848484;
+  margin-left: 45px;
+  }
+  
+ .checkboxFive label {
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 20px;
+  }
+ @media screen and (min-width: 375px) and (max-width:414px){	
+
+.agree{margin-left:50px;}
+.checkboxFive label:after {
+	width: 11px;
+	height: 6px;
+	top: 3px;
+	left: 2px;
+}
+.checkboxFive input[type=checkbox]:checked + label:after {
+	top: 3px;
+	left: 2px;
+}
+}
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

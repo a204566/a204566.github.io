@@ -1,0 +1,440 @@
+/* CSS Document */
+
+*{ 
+	margin:0; 
+	padding:0; 
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{ background-color:#f0f0f0}
+body,html{ width:100%; height:100%}
+ul,ol{ list-style:none;margin:0; padding:0;}
+p,a,span{margin:0; padding:0;}
+a{text-decoration:none; border: 0}
+img{border:0;}
+html{ font-size:10px}
+.ui-loader-default{ display:none;!important}
+.ui-mobile-viewport{ border:none;!important}
+.ui-page {padding: 0; margin: 0; outline: 0;!important}
+input[type=checkbox] {
+	visibility: hidden;
+}
+@media screen and (min-width: 375px) and (max-width:413px){	
+html{ font-size:9.5px}
+}
+@media screen and (min-width: 320px) and (max-width:374px){	
+html{ font-size:9px}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+.header{ width:100%; padding:0.8em 0; background:#fff;}
+.co_box{ width:90%; margin:0 auto;}
+.mobile_logo{ display:inline-block;}
+.mobile_logo img{}
+.mobile_fuction{ display:inline-block; float:right; margin-top:1.1em;}
+.mobile_login{ width:32px; height:32px; overflow:hidden;background:url(../images/mobile_index_icon_05.png) 0px -32px no-repeat; display:inline-block; margin-right:1em;}
+.mobile_nav{width:32px; height:32px; overflow:hidden; background:url(../images/mobile_index_icon_05.png)  no-repeat; display:inline-block;}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+.container{ width:100%; height:16rem; background:#f4f4f4; margin-bottom:1rem;}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+.co-grids{ width:90%; margin:0 auto; margin-bottom:1rem;}
+.co-grids3{ width:50%; background:#ff9900; height:12rem; display:inline-block;}
+p{ height:12rem; line-height:12rem; color:#fff; font-size:2.5rem; padding-left:3rem; font-family:"Microsoft Yahei";}
+span{ display:inline-block; height:28px; width:80px; background:url(../images/mobile_index_icon_10.png); margin-left:3rem;}
+			span.co-rental{ background-position:-81px 0px; width:79px; height:27px;}
+			span.co-price{background-position:0px -30px; width:81px; height:30px;}
+			span.co-rent{background-position:-81px -30px; width:79px; height:30px;}
+	.co-grids4{ width:48%; background:#ff9900; height:12rem; display:inline-block; float:right;}
+
+.co-grids2{ width:90%; margin:0 auto; padding-bottom:1rem;}
+	.co-grids5{ width:50%; height:13rem; display:inline-block;}
+	.co-grids6{ width:48%; height:13rem; display:inline-block; float:right;}
+	.co-grids7{ width:48%; height:13rem; background:#ff9900; display:inline-block;}
+	.co-grids8{ width:48%; height:13rem; background:#ff9900; display:inline-block;float:right;}
+	
+	.co-orange{ background:#ffad33;}
+	.co-purple{ background:#9d4cef;}
+	.co-green{ background:#3dc4be;}
+	.co-cyan{ background:#c8f3be;}
+	.co-red{ background:#d43b5a;}
+	.co-pink{ background:#ff6766;}
+	
+	.co-box{ width:100%;}
+	.co-order{ background:url(../images/icon_order.png) no-repeat center; width:100%; height:51px; display:inline-block; margin-top:2.5rem;}
+	.co-store{ background:url(../images/icon_map.png)  no-repeat center; width:100%; height:51px; display:inline-block;margin-top:2.5rem;}
+	.co-flow{ background:url(../images/icon_flow.png)  no-repeat center; width:100%; height:51px; display:inline-block;margin-top:2.5rem;}
+	.co-vip{ background:url(../images/icon_vip.png)  no-repeat center; width:100%; height:51px; display:inline-block; margin-top:2.5rem;}
+	b{ height:3rem; line-height:5rem; color:#fff; font-size:2.5rem; font-family:"Microsoft Yahei"; text-align:center; font-weight:normal; display:inline-block; width:100%;}
+
+
+/*---------------------------------------------------------login.html----------------------------------------------------------------------------------*/
+.co-top{ background:#47b0ed; width:100%;overflow:hidden;height: 44px;line-height: 44px; position:fixed; top:0px; z-index:1}
+.top-hide{ width:100%;overflow:hidden;height: 44px}
+.co-login,.fa-choose{ float:left}
+.co-login{ display:block; color:#fff; font-size:2rem; width:80%; text-align:center; position:relative;font-family:"Microsoft Yahei";}
+.fa-choose-left{ color:#fff; font-size:3em; text-align:left; position: absolute; left:2rem; }
+.location{	
+	position: absolute; 
+    left: 10px; 
+	}
+.location a,#map{ 
+	float:left
+	}
+.location a{	
+	color:#fff;
+	font-family:"Microsoft Yahei";
+	font-size:1.5rem;
+	}	
+#map{
+  height: 44px;
+  width: 44px;
+  background-image:url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: #47b0ed;
+  outline: none;
+  cursor: pointer;
+  background-size:23px auto;
+	}
+#nav-cell{
+  height: 44px;
+  width: 44px;
+  background-image: url(../images/nav-cell.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position:absolute;
+  right: 10px;
+  top: 0px;
+  border: none;
+  background-color: #47b0ed;
+  outline: none;
+  cursor: pointer;
+  background-size: 35px auto;
+  z-index:1
+	}
+	
+
+/*---------------------------------------------------------regedit.html----------------------------------------------------------------------------------*/
+	.login-box3{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:8rem; border-radius:5px; margin-bottom:2rem;}
+	.regedit-other{ width:90%; margin:0 auto;margin-bottom:1rem;}
+		.regedit-other i{ font-style:normal;font-family:"Microsoft Yahei" ; font-size:1.125rem; color:#bbb; }
+
+/*---------------------------------------------------------changecode.html----------------------------------------------------------------------------------*/
+	.login-box4{width:90%; margin:0 auto; margin-bottom:1rem;}
+	.co-em{ width:90% ; margin:0 auto;margin-bottom:1rem;}
+	em{ font-family:"Microsoft Yahei" ; font-size:2rem; font-style:normal;}
+		.em-color{ color:#bbbbbb; font-size:1.3rem;}
+	.change-btn{ width:50%; margin:0 auto; height:7rem; line-height:7rem; text-align:center; font-family:"Microsoft Yahei" ; font-size:2rem;}
+		.change-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
+		
+		
+		
+/*---------------------------------------------------------ordermanage.html----------------------------------------------------------------------------------*/		
+	.login-box5{width:100%; background:#fff;width:100%; padding:2rem 0rem; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative; border-top:1px solid #dedede;}
+	.login-box6{width:100%; background:#fff;width:100%; padding:2rem 0rem; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+	.login-box7{width:100%; background:#fff;width:100%; padding:2rem 0rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative; border-top:1px solid #dedede; border-bottom:1px solid #dedede; text-align:center;}
+	.fa-choose-right{ color:#bbb; font-size:2em; text-align:left; position: absolute; right:2rem; display:inline-block; top:1rem;}
+
+
+/*---------------------------------------------------------usercenter.html----------------------------------------------------------------------------------*/	
+.co-user{ background:#47b0ed; border-top:1px solid #a3d8f6; position:relative; padding:3rem 0; padding-left:2rem;}
+	.co-mail{ display:inline-block; font-size:2rem; color:#fff; font-family:"Microsoft Yahei" ;}
+	.co-mophone{ display:inline-block; font-size:2rem; color:#fff; font-family:"Microsoft Yahei" ; margin-left:10rem;}
+	b.phone-select{ background:url(../images/mobile_usercenter_03.png) no-repeat center center; width:24px; height:24px; margin-right:2rem;}
+	b.mail-select{ background:url(../images/mobile_usercenter_05.png) no-repeat center center; width:24px; height:24px; margin-right:2rem;}
+	
+	.fa-cheron-right{ color:#fff; right:2rem; position:absolute; font-size:2rem;}
+
+
+/*---------------------------------------------------------userinfo.html----------------------------------------------------------------------------------*/
+	.login-box7 a{ color:#848484; display:inline-block; width:100%;}
+	
+	
+/*---------------------------------------------------------selectcar.html----------------------------------------------------------------------------------*/
+.co-contain{ width:100%; }	
+	.login-box8{width:100%; background:#fff;width:100%; padding:2rem 0rem; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative; border-bottom:1px solid #dedede;}	
+		.co-car{ background:url(../images/fdcar.png) no-repeat center center; width:113px; height:66px; display:inline-block;}
+		.co-car-detail{ display:inline-block; margin-left:5rem;}
+			.car-name{ color:#47b0ed;}
+			.car-info{}
+		.co-car-price{ display:inline-block; float:right; margin-right:5rem;}
+			.car-day{ color:#bbb;}
+			.car-price{ color:#ff9900;}
+			.car-price i{ font-style:normal; font-size:1rem;}
+
+.co-bottom2{width:100%; position:fixed; bottom:0;}
+	.login-box9{width:100%; background:#fff;width:100%; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative; border-top:1px solid #dedede; border-bottom:1px solid #dedede; padding:2rem 0;}		 	
+	.co-car-select{display:inline-block; width:49%; text-align:center;}
+		.co-car-select a{color:#848484; display:inline-block; margin-left:2rem;}
+		.co-car-select b.price{ background:url(../images/mobile_selectcar_03.png) no-repeat center center; width:26px; height:27px; display:inline-block;}
+		.co-car-select b.select{ background:url(../images/mobile_selectcar_05.png) no-repeat center center; width:26px; height:27px; display:inline-block;}
+
+
+
+/*---------------------------------------------------------orderdetail.html----------------------------------------------------------------------------------*/
+
+	.car-contain-info{ width:90%; margin:0 auto; background:#fff; box-shadow: 0px 5px 10px rgba(0,0,0,0.3);-moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.3);-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.3);}
+		h1{ padding:1rem 5rem; background:#eee; color:#333; font-family:"Microsoft Yahei" ; font-weight:normal;}
+		.login-box10{width:100%; background:#fff;width:100%; padding:2rem 0rem; padding-left:5rem;font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative;}
+		.login-box11{width:100%; background:#fff;width:100%; padding:2rem 0rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative; background:#47b0ed;}
+		.login-box11 a{ color:#fff; font-size:2rem; text-align:center; width:100%; display:inline-block;}	
+		.car-takeback{ padding:0 5rem;}
+			.car-take{display:inline-block; font-size:2rem; font-family:"Microsoft Yahei" ; font-weight:normal; color:#bbb; width:45%;}
+				.co-take{ margin-bottom:0.5rem;}
+				.take-time{}
+			.car-back{ display:inline-block; font-size:2rem; font-family:"Microsoft Yahei" ; font-weight:normal; color:#bbb; width:45%;}
+				.co-back{margin-bottom:0.5rem;}
+				.back-time{}
+				
+		.car-store{ padding:2rem 0;}
+			.store-take{ padding:1rem 5rem;font-size:2rem; font-family:"Microsoft Yahei" ; font-weight:normal; color:#bbb;}
+				.take-data{display:inline-block; margin-left:3rem;}
+			.store-back{padding:1rem 5rem;font-size:2rem; font-family:"Microsoft Yahei" ; font-weight:normal; color:#bbb;}	
+				.back-data{ display:inline-block; margin-left:3rem;}	
+				
+		.cost-box{width:100%; background:#fff;width:100%; padding:2rem 5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484; position:relative;}
+			.cost-name{ display:inline-block; color:#333;}
+			.cost-price{ display:inline-block; color:#ff9900; float:right;}
+			.cost-price i{ font-style:normal; font-size:1rem;}									
+
+
+
+
+		.co-total{ display:inline-block; padding:2rem 0; padding-left:5rem;}
+			.total-price{ color:#ff9900; display:inline-block;}
+			.total-price i{ font-style:normal; font-size:1rem;}
+		.co-total-btn{ display:inline-block; background:#47b0ed; padding:2rem 0; float:right;}
+			.co-total-btn a{ color:#fff; height:100%; padding:2rem 4rem;}
+			.co-total-btn a:hover{ background:#2f8ec5;}
+	
+/*---------------------------------------------------------orderservice.html----------------------------------------------------------------------------------*/
+	i.service-select-icon{ background:url(../images/service-select_07.png) no-repeat center center; width:94px; height:64px; display:inline-block;}	
+	i.service-select-icon:hover{ background:url(../images/service-select_03.png);}
+	.fa-select-right{text-align:left; position: absolute; right:2rem; display:inline-block; top:2rem;}
+		
+		
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+.footer-links{ width:90%; height:12rem; margin:0 auto; padding-top:1rem;}
+	.co-phone{ display:inline-block; font-size:3.2rem; font-family:"Microsoft Yahei"; line-height:3.2rem; color:#ff9900;}
+	.co-links{ display:inline-block; float:right; font-size:3.2rem;font-family:"Microsoft Yahei";line-height:3rem;}
+		.co-about{display:inline-block; margin-right:2rem;}
+		.co-reback{display:inline-block;margin-right:2rem;}
+		.co-computer{display:inline-block;margin-right:2rem;}
+		.co-mobile{display:inline-block;}
+/*-----------------------------------------------*/
+.vertify-input{  height:40px; line-height:25px; width:100%; border-radius:5px; padding-left:4rem; font-family:"Microsoft Yahei"; font-size:1.6rem; color:#848484; border:1px solid #dedede;}
+.login-input{ height:40px; line-height:25px; width:100%; border-radius:5px ; border-bottom:none; padding-left:4rem; font-family:"Microsoft Yahei" ; font-size:1.6rem; color:#848484;border:1px solid #dedede;}
+.login-btn{ width:90%; margin:0 auto; height:5rem; line-height:5rem; text-align:center; font-family:"Microsoft Yahei" ; font-size:2.3rem;}
+.login-put b.login-icon{ background:url(../images/weixin_login_icon_phone.png) no-repeat center center; width:32px; height:32px; position:absolute; top:0.4rem; left:0.4rem;  background-size: 22px auto;}
+.login-put b.code-icon{ background:url(../images/weixin_login_icon_lock.png) no-repeat center center; width:32px; height:32px; position:absolute; top:0.4rem; left:0.4rem;  background-size: 22px auto;}
+.login-put b.contract-icon{ background:url(../images/weixin_login_icon_order2.png) no-repeat center center; width:32px; height:32px; position:absolute; top:0.4rem; left:0.4rem;  background-size: 20px auto;}
+.login-put b.license-icon{ background:url(../images/weixin_login_icon_car_NO.png) no-repeat center center; width:32px; height:32px; position:absolute; top:0.4rem; left:0.4rem;  background-size: 32px auto;}
+.pwd-put b.pwd-icon{background:url(../images/weixin_login_icon_lock.png) no-repeat center center; width:32px; height:32px; position:absolute; top:0.4rem; left:0.4rem;  background-size: 22px auto;}
+.pwd-put b.vertify-icon{background:url(../images/weixin_login_icon_card.png) no-repeat center center; width:32px; height:32px; position:absolute;top: 0.4rem;left: 0.4rem;background-size: 22px auto;}
+.pwd-put b.favour-icon{background:url(../images/weixin_login_icon_card.png) no-repeat center center; width:32px; height:32px; position:absolute; top:3.1rem; left:2rem;}
+.vertify-input2{ display:block; height:40px; line-height:40px; width:40%; border-radius:5px;  font-family:"Microsoft Yahei"; font-size:1.6rem; border:1px solid #dedede; text-align:center; background:#e6e6e6; color:#909090; float:right;}
+.vertify-input2 a{ display:inline-block;}
+.step{width:100%; height:35%;height:38px;line-height:38px;text-align: center; border-bottom:solid 1px #d6d6d6;color:#94999d;font-family:"Microsoft Yahei"; font-size:1.8rem}
+
+
+
+/*Checkbox Five */
+.checkboxFive {
+	margin: 15px 0px 0px 0px;
+	position: relative;
+}
+
+/*Create the box for the checkbox*/
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 5px;
+	left: 98px;
+	background: #eee;
+	border:1px solid #ddd;
+	border-radius: 500px;
+}
+
+
+/*Display the tick inside the checkbox*/
+.checkboxFive label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 6px;
+	background: transparent;
+	top: 6px;
+	left: 5px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+ 
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+/*Create the hover event of the tick*/
+.checkboxFive label:hover::after {
+	opacity: 0.5;
+}
+ 
+/*Create the checkbox state for the tick*/
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+	background: transparent;
+	top: 6px;
+	left: 5px;
+	border: 3px solid #fff;
+	border-top: none;
+	border-right: none;
+}
+/*change background*/
+.checkboxFive input[type=checkbox]:checked + label {
+	opacity: 1;
+	background-color:#4bbae1;
+	border:1px solid #4bbae1;
+}
+
+@media screen and (min-width: 320px) and (max-width:374px){	
+/*勾选框*/
+.checkboxFive {
+	margin: 5px 0px 0px 0px;
+	position: relative;
+}
+.checkboxFive label {
+	width: 20px;
+	height: 20px;
+	top: 6px;
+	left: 90px;
+}
+.checkboxFive label:after {
+	top: 3px;
+	left: 2px;
+	width: 11px;
+} 
+.checkboxFive input[type=checkbox]:checked + label:after {
+	top: 3px;
+	left: 2px;
+}
+
+}
+
+/*bottom*/
+/*底部*/
+.botton-hide{
+	width: 100%;
+	height:59px;
+	}
+.botton{
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height:49px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	border-top: 1px solid #b2b2b2;
+	text-align: center;
+	padding: 2px 0;
+}
+.botton a{
+	padding-top: 28px;
+	font-size: 1.6rem;
+    font-family:"Microsoft Yahei";
+}
+.bti-1{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	text-align: center;
+	background-image:url(../images/weixin_index_home.png);
+	background-size:26px auto;
+	background-repeat:no-repeat; 
+	background-position:center 2px;	
+}
+.bti-1-cur{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	background-image:url(../images/weixin_index_home_click.png);
+	background-size:26px auto;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+	 color:#4389c5;
+}
+.bti-2{
+	display: inline-block;
+	float:left;
+	width: 25%;
+	background-image:url(../images/weixin_index_car.png); 
+	background-size:auto 24px;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.bti-2-cur{
+	display: inline-block;
+	float:left;
+	width: 25%;
+	background-image:url(../images/weixin_index_car_click.png); 
+	background-size: auto 24px;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+    color:#4389c5;
+
+}
+
+.bti-3{
+	display:  inline-block;
+	float:left;
+	width: 25%;
+	text-align: center;
+	background-image:url(../images/weixin_index_key.png);
+	background-size:26px auto;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.bti-3-cur{
+	display:inline-block;
+	float:left;
+	width: 25%;
+	text-align: center;
+	background-image:url(../images/weixin_index_key_click.png);
+	background-size:26px auto;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+	 color:#4389c5;
+} 
+  
+  
+ .bti-4{
+	float: right;
+	width: 25%;
+	text-align: center;
+	background-image:url(../images/weixin_index_me.png);
+	background-size:26px auto;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+}
+.bti-4-cur{
+	float: right;
+	width: 25%;
+	text-align: center;
+	background-image:url(../images/weixin_index_me_click.png);
+	background-size:26px auto;
+	background-repeat:no-repeat; 
+	background-position:center 2px;
+	color:#4389c5;
+} 

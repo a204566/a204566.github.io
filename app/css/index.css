@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+.ui-loader-default{ display:none;!important}
+.ui-mobile-viewport{ border:none;!important}
+.ui-page {padding: 0; margin: 0; outline: 0;!important}
+/*输入框*/
+.co-login{  width:100%;}
+.co-contain{ margin-top:1rem; width:100%; }
+.login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:70px; border-radius:5px 5px 0px 0px; border-bottom:none;}
+.login-box2{background:#fff; width:90%; margin:0 auto;height:70px; border-radius:0px 0px 5px 5px;  margin-top: 20px;}
+.login-put{ width:100%;position:relative;}
+.pwd-put{ width:100%;position:relative;}
+
+
+.login-input2{ height:40px; line-height:40px; width:100%; border-radius:5px 5px 0px 0px ; border-bottom:none; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484;}
+.pwd-input{  height:40px; line-height:40px; width:100%; border-radius: 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede; border-radius:5px;background:#fff;}
+.pwd-input2{  height:40px; line-height:40px; width:100%; border-radius:0px 0px 5px 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede;}
+
+			
+			.vertify-input{ width:58%; }			
+.co-bottom{ margin-top:3rem; width:100%;}
+
+		.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
+	.login-other{ width:90%; margin:0 auto; margin-top:1rem;}
+		.login-other i{ font-style:normal;font-family:"Microsoft Yahei" ; font-size:1.125rem; color:#47b0ed;}
+		.login-other i a{ color:#47b0ed;}
+		.login-other i.login-forgetpwd{ float:right;}	
+		
+
+
+.index-box{
+	width: 95%;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+	margin-top: 15px;
+	border:solid 1px #e2e2e2
+	}
+.banner img{
+	width:100%; 
+	height:auto;
+	}
+.banner-main{margin-top: 20px;}   
+.banner-main h3,h4{
+	font-weight:normal;
+	font-size:1.6rem;
+	font-family:"Microsoft Yahei";
+	color:#b0b1b2;
+	} 
+.banner-main h3{
+	font-size:2rem;
+	font-family:"Microsoft Yahei";
+	color:#cd303b;
+	margin-top: 5px;
+	}  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

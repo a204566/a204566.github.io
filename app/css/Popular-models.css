@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+/*输入框*/
+.co-top{ position:fixed; top:0px; z-index:1}
+ .co-login{ display:block; color:#fff; font-size:2rem; width:80%; text-align:center; position:relative;font-family:"Microsoft Yahei";} 
+.co-contain{ margin-top:1rem; width:100%; }
+.login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:70px; border-radius:5px 5px 0px 0px; border-bottom:none;}
+.login-box2{background:#fff; width:90%; margin:0 auto;height:70px; border-radius:0px 0px 5px 5px;  margin-top: 20px;}
+.login-put{ width:100%;position:relative;}
+.pwd-put{ width:100%;position:relative;}
+
+
+.login-input2{ height:40px; line-height:40px; width:100%; border-radius:5px 5px 0px 0px ; border-bottom:none; padding-left:5rem; font-family:"Microsoft Yahei" ; font-size:2rem; color:#848484;}
+.pwd-input{  height:40px; line-height:40px; width:100%; border-radius: 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede; border-radius:5px;background:#fff;}
+.pwd-input2{  height:40px; line-height:40px; width:100%; border-radius:0px 0px 5px 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede;}
+
+			
+			.vertify-input{ width:58%; }			
+.co-bottom{ margin-top:3rem; width:100%;}
+
+		.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
+	.login-other{ width:90%; margin:0 auto; margin-top:1rem;}
+		.login-other i{ font-style:normal;font-family:"Microsoft Yahei" ; font-size:1.125rem; color:#47b0ed;}
+		.login-other i a{ color:#47b0ed;}
+		.login-other i.login-forgetpwd{ float:right;}	
+		
+
+/*条件筛选*/
+.lis-title{ 
+	width:100%; 
+	height:50px;
+ 	background-color:#fff;
+	border-bottom:solid 1px #b2b2b2;
+	position: fixed;
+	top: 44px;
+	z-index:1
+	}
+.lis-title a{
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+	line-height:50px;
+	width: 25%;
+	display: block;
+	float: left;
+	text-align:center;
+	}
+.parting{
+	background-image:url(../images/weixin_list_parting.png);
+	background-repeat: no-repeat;
+    background-position: center right;
+	padding-left: 7px;
+	padding-right: 7px;
+	}
+.screen{
+	border-left:solid 1px #e4e5e8;
+	
+	}
+  
+/*models*/
+.models-main{
+	width:100%;
+	position: absolute;
+    top: 94px;
+	}
+.modelses{
+	width:100%;
+	background-color:#fff;
+	padding:10px;
+	border-bottom:solid 1px #e0dfdf;
+	overflow:hidden;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+	} 
+.car-show,.car-main,.car-time{ float:left} 
+.car-show img{
+	width:100%;
+	height:auto
+	}   
+.car-show{width:30%} 
+.car-main,.car-time{width:35%;color: #939ca2;}
+.car-main{ padding-left:15px}
+.car-main h2{ font-weight:normal;margin-bottom: 5px; color:#343333}
+.car-time{ float:right; text-align:right;}   
+.payment{color:#cd303b}  
+@media screen and (min-width: 375px) and (max-width:414px){	
+.modelses{
+	font-size:1.8rem;
+	} 
+}  
+  

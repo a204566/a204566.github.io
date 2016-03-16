@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+
+/*输入框*/
+.co-login{  width:100%;}
+.co-contain{ width:100%; z-index:0}
+.login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:70px; border-radius:5px 5px 0px 0px; border-bottom:none;}
+.login-box2{background:#fff; width:90%; margin:0 auto;height:70px; border-radius:0px 0px 5px 5px;  margin-top: 20px;}
+.login-put{ width:100%;position:relative;}
+.pwd-put{ width:100%;position:relative;}
+
+.pwd-input{  height:40px; line-height:40px; width:100%; border-radius: 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede; border-radius:5px;background:#fff;}
+.pwd-input2{  height:40px; line-height:40px; width:100%; border-radius:0px 0px 5px 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede;}
+
+			
+		
+		
+.vertify-input2 a{ display:inline-block;}			
+.co-bottom{ margin-top:1.5rem; width:100%;}
+
+		.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
+	.login-other{ width:90%; margin:0 auto; margin-top:1rem;}
+		.login-other i{ font-style:normal;font-family:"Microsoft Yahei" ; font-size:1.125rem; color:#47b0ed;}
+		.login-other i a{ color:#47b0ed;}
+		.login-other i.login-forgetpwd{ float:right;}	
+		
+
+.step{ position:fixed;top:44px; z-index:1; background-color:#fff}
+.step-hide{
+	width: 80%;
+    height: 38px;
+	}
+.step-line{
+	width: 80%;
+    height: 38px;
+    display: block;
+    margin: auto;
+	background-image:url(../images/step-line.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	}
+.step-button{
+    width: 80%;
+    margin: auto;
+	overflow: hidden;
+	position:absolute;
+	top: 6px;
+    left: 50px;
+	}
+.step-button div{
+	width: 25%;
+	margin: auto;
+    overflow: hidden;
+    float: left;
+	}
+.step-button a{
+	width: 25px;
+    height: 25px;
+    border-radius: 500px;
+    background-color: #d3d8dc;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    color: #696969;
+	}
+@media screen and (min-width: 375px) and (max-width:413px){	
+.step-button{
+	top: 6px;
+    left: 60px;
+	}
+}
+@media screen and (min-width: 375px) and (max-width:414px){	
+.step-button{
+	top: 6px;
+    left:70px;
+	}
+}
+.title{ 
+	width:100%; 
+	height:38px; 
+	text-align:center; 
+	line-height:38px;
+	font-size:1.8rem;
+	font-family:"Microsoft Yahei";
+	color:#7f7f7f;
+	background-color:#f0f0f0;
+	}
+.clientele-list{	
+	background-color:#fff;
+	overflow:hidden;
+}
+.clientele-list2{	
+	background-color:#fff;
+	overflow:hidden;
+	margin-top:15px
+}
+.clientele{ 
+	width:85%;
+	color:#a2a2a2;
+	font-size:1.8rem;
+	font-family:"Microsoft Yahei";
+	border-bottom:solid 1px #dadada;
+}
+.clientele-margin,.clientele{ float:left}
+.clientele-margin{ width:15%; height:38px}		
+.clientele-input{height:38px;  margin-left: 20px; color:#4a4949;}	
+.clientele-input2{width:100%;height:38px; color:#4a4949;}
+.clientele-botton a{ 
+	line-height:38px; 
+	height: 38px;
+	background-image:url(../images/weixin_clientele_arrow.png); 
+	background-repeat:no-repeat;
+	background-position:center right;
+	float: left;
+    width: 90%;
+	}	
+.clientele-chose{width:33%}	
+.clientele-btn{ 
+	width:90%; 
+	margin:0 auto; 
+	height:4rem; 
+	text-align:center; 
+	background: #47b0ed;
+	border-radius:5px;
+	margin-bottom: 50px;
+	}	
+.clientele-btn a{ 
+	line-height:4rem; 
+	font-family:"Microsoft Yahei" ; 
+	font-size:2.2rem;
+	color:#fff; 
+	}	
+.step-chose{
+	background-color:#2a8ae0;
+	color:#fff;
+	}		
+	
