@@ -55,7 +55,7 @@ a{color:#94999d}
     overflow: hidden;
     float: left;
 	}
-.step-one{
+.step-two{
 	background-color:#2a8ae0;
 	color:#fff;
 	width: 25px;
@@ -66,7 +66,7 @@ a{color:#94999d}
     text-align: center;
     line-height: 25px;
 	}	
-.step-two,.step-three,.step-four{
+.step-one,.step-three,.step-four{
 	width: 25px;
     height: 25px;
     border-radius: 500px;
@@ -117,7 +117,7 @@ a{color:#94999d}
 }
 .clientele-margin,.clientele{ float:left}
 .clientele-margin{ width:15%; height:38px}		
-.clientele-input{height:38px;  margin-left: 20px; color:#4a4949;}	
+.clientele-input{width:100%;height:38px; color:#4a4949;}	
 .clientele-input2{width:100%;height:38px; color:#4a4949;}
 .clientele-botton a{ 
 	line-height:38px; 
