@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 a{color:#94999d}
 .chose{ color:#2a8ae0}
@@ -143,4 +143,10 @@ a{color:#94999d}
 	font-family:"Microsoft Yahei" ; 
 	font-size:2.2rem;
 	color:#fff; 
-	}		
+	}
+
+.botton{
+	position:relative;
+	bottom: 0;
+	left: 0;
+}		

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/booking4.css">
+<script src="js/modernizr.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jSignature.min.noconflict.js"></script>
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<div class="co-top">
+<div class="location">
+<button id="map" data-role="none" ></button>
+<a href="#" data-role="none" >深圳</a>
+</div>
+<div class="co-login">在线预订</div>
+ <button id="nav-cell" data-role="none" ></button>
+</div>
+<div class="top-hide"></div>
+<div class="step">
+	<a class="step-line"></a>
+    <div class="step-button">
+		<div><a href="booking1.html" class="step-one">1</a></div>
+    	<div><a href="booking2.html" class="step-two">2</a></div>
+    	<div><a href="booking3.html" class="step-three">3</a></div>
+   	 	<div><a href="booking4.html" class="step-four">4</a></div>
+    </div>
+</div>
+<div class="step-hide"></div>
+
+
+<div class="co-contain">
+	<div class="title">
+    若您同意所有法律文件，请在下方签名并勾选同意
+   <p>（点击空白处可进行签名）</p>
+    </div>
+   
+
+  
+   		<div>
+		<div id="content">
+		<div id="signatureparent">
+		<div id="signature">
+        </div>
+        </div>
+		<div id="tools"></div>
+		<input type="button" value="确认保存" id="btnTest">
+        <input type="button" value="重写" id="reset">
+		手写的值为:<input type="text" name="" id="memo">
+        <div>
+        <div id="displayarea"></div>
+        </div>
+		</div>
+		<div id="scrollgrabber"></div>
+		</div>
+
+ 
+  
+  
+  
+    
+   
+    
+    
+</div>
+<div class="co-bottom">
+	<div class="clientele-btn"><a href="booking3.html">下一步</a></div>
+</div>
+</div>
+
+
+<!--底部隐藏-->
+<div class="botton-hide">
+</div>    
+    
+</div>
+
+
+<!--底部-->
+<div class="botton">
+    <a class="bti-1"  id="dh_1" href="index.html">首页</a>
+    <a class="bti-2"  id="dh_2" href="Popular-models.html">热门车型</a>
+    <a class="bti-3-cur"  id="dh_3"  href="booking1.html">在线预订</a>
+    <a class="bti-4"  id="dh_4"  href="#">我的</a>
+</div>
+
+
+
+<script type="text/javascript"></script>
+<script>
+/*  @preserve
+jQuery pub/sub plugin by Peter Higgins (dante@dojotoolkit.org)
+Loosely based on Dojo publish/subscribe API, limited in scope. Rewritten blindly.
+Original is (c) Dojo Foundation 2004-2010. Released under either AFL or new BSD, see:
+http://dojofoundation.org/license for more information.
+*/
+(function($) {
+	var topics = {};
+	$.publish = function(topic, args) {
+	    if (topics[topic]) {
+	        var currentTopic = topics[topic],
+	        args = args || {};
+	
+	        for (var i = 0, j = currentTopic.length; i < j; i++) {
+	            currentTopic[i].call($, args);
+	        }
+	    }
+	};
+	$.subscribe = function(topic, callback) {
+	    if (!topics[topic]) {
+	        topics[topic] = [];
+	    }
+	    topics[topic].push(callback);
+	    return {
+	        "topic": topic,
+	        "callback": callback
+	    };
+	};
+	$.unsubscribe = function(handle) {
+	    var topic = handle.topic;
+	    if (topics[topic]) {
+	        var currentTopic = topics[topic];
+	
+	        for (var i = 0, j = currentTopic.length; i < j; i++) {
+	            if (currentTopic[i] === handle.callback) {
+	                currentTopic.splice(i, 1);
+	            }
+	        }
+	    }
+	};
+})(jQuery);
+
+
+
+
+
+(function($){
+
+$(document).ready(function() {
+	
+	// This is the part where jSignature is initialized.
+	var $sigdiv = $("#signature").jSignature({'UndoButton':true})
+	
+	// All the code below is just code driving the demo. 
+	, $tools = $('#tools')
+	, $extraarea = $('#displayarea')
+	, pubsubprefix = 'jSignature.demo.'
+	
+	// 点击按钮显示值
+	$("#btnTest").bind('click', function(e){
+		// 取得所画的模板
+		var data = $sigdiv.jSignature('getData', 'image')
+		// 将取得值设置到文本中
+		$("#memo").val(data.join(','))
+		// 将取得的值设置到显示区域
+		$.publish(pubsubprefix + data[0], data);
+		var i = new Image()
+		i.src = 'data:' + data[0] + ',' + data[1]
+		$(i).appendTo($extraarea)
+	}).appendTo($tools)
+
+	$("#reset").bind('click', function(e){
+		$sigdiv.jSignature('reset')
+		$("#displayarea").empty()
+	}).appendTo($tools)
+	
+	if (Modernizr.touch){
+		$('#scrollgrabber').height($('#content').height())		
+	}
+	
+})
+
+})(jQuery)
+</script>
+</body>
+</html>

@@ -77,10 +77,35 @@ a{color:#94999d}
     line-height: 25px;
     color: #696969;
 	}
+
+
+.title{ 
+	width:100%; 
+	text-align:center; 
+	line-height:38px;
+	font-size:1.6rem;
+	font-family:"Microsoft Yahei";
+	color:#7f7f7f;
+	background-color:#f0f0f0;
+	}
+.title p{
+   height:38px;
+   line-height:18px;
+   color:#7f7f7f;
+   font-size: 1.6rem;
+   padding:0;
+   font-family: "Microsoft Yahei";
+}
 @media screen and (min-width: 375px) and (max-width:413px){	
 .step-button{
 	top: 6px;
     left: 62px;
+	}
+.title{ 
+	font-size:1.7rem;
+	}
+.title p{
+   font-size: 1.7rem;
 	}
 }
 @media screen and (min-width: 413px) and (max-width:414px){	
@@ -88,17 +113,14 @@ a{color:#94999d}
 	top: 6px;
     left:70px;
 	}
-}
+	
 .title{ 
-	width:100%; 
-	height:38px; 
-	text-align:center; 
-	line-height:38px;
-	font-size:1.8rem;
-	font-family:"Microsoft Yahei";
-	color:#7f7f7f;
-	background-color:#f0f0f0;
+	font-size:1.7rem;
 	}
+.title p{
+   font-size: 1.7rem;
+	}
+}
 .clientele-list{	
 	background-color:#fff;
 	overflow:hidden;
@@ -150,3 +172,59 @@ a{color:#94999d}
 	bottom: 0;
 	left: 0;
 }	
+
+/*--------------------------------------------------*/	
+/*writting*/	
+#signatureparent {
+		color:#666;
+		padding:20px;
+		width:90%;
+		margin:auto;
+	}
+	
+#signature {
+		border: 1px solid #d6d6d6;
+		border-radius:5px;
+		background-color:#fff;
+	}
+
+/*html.touch #content {
+		float:left;
+		width:92%;
+	}
+html.touch #scrollgrabber {
+		float:right;
+		width:4%;
+		margin-right:2%;
+		background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAAAAACh79lDAAAAAXNSR0IArs4c6QAAABJJREFUCB1jmMmQxjCT4T/DfwAPLgOXlrt3IwAAAABJRU5ErkJggg==)
+	}
+html.borderradius #scrollgrabber {
+		border-radius: 1em;
+	}	*/
+	
+#btnTest{
+	width: 80px;
+	height: 28px;
+	background-color: #47b0ed;
+	color: #fff;
+	border-radius: 3px;
+	outline: none;
+	}	
+#reset{
+	width: 80px;
+	height: 28px;
+	background-color: #47b0ed;
+	color: #fff;
+	border-radius: 3px;
+	outline: none;
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

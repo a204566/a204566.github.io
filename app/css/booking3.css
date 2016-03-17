@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 a{color:#94999d}
 .chose{ color:#2a8ae0}
@@ -89,25 +89,7 @@ a{color:#94999d}
     left:70px;
 	}
 }
-.title{ 
-	width:100%; 
-	height:38px; 
-	text-align:center; 
-	line-height:38px;
-	font-size:1.8rem;
-	font-family:"Microsoft Yahei";
-	color:#7f7f7f;
-	background-color:#f0f0f0;
-	}
-.clientele-list{	
-	background-color:#fff;
-	overflow:hidden;
-}
-.clientele-list2{	
-	background-color:#fff;
-	overflow:hidden;
-	margin-top:15px
-}
+
 .clientele{ 
 	width:85%;
 	color:#a2a2a2;
@@ -117,22 +99,13 @@ a{color:#94999d}
 }
 .clientele-input{
 	width:100%;
-	height:38px; 
+	height:28px; 
 	color:#4a4949;
 	border: solid 1px #b5b4b4;
 	}	
 
 /*按钮*/
-.clientele-botton a{ 
-	line-height:38px; 
-	height: 38px;
-	background-image:url(../images/weixin_clientele_arrow.png); 
-	background-repeat:no-repeat;
-	background-position:center right;
-	float: left;
-    width: 90%;
-	}	
-.clientele-chose{width:33%}	
+
 .clientele-btn{ 
 	width:90%; 
 	margin:0 auto; 
@@ -253,5 +226,9 @@ a{color:#94999d}
 	margin-top: 15px;
 	}
 
-
+.botton{
+	position:relative;
+	bottom: 0;
+	left: 0;
+}
 
