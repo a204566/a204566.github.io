@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/online-booking.css">
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/jquery.mobile-1.3.2.js"></script>
 
@@ -17,52 +17,69 @@
 <body>
 
 
-<div class="co-top" data-role="none" >
+<div class="co-top">
 <div class="location">
 <button id="map" data-role="none" ></button>
 <a href="#" data-role="none" >深圳</a>
 </div>
-<div class="co-login" data-role="none" >首页</div>
+<div class="co-login">在线预订</div></div>
  <button id="nav-cell" data-role="none" ></button>
 </div>
 <div class="top-hide"></div>
 <div class="co-contain">
-	<div class="index-box">
-    	<div class="banner"><img src="images/banner.png"></div>
-        <div class="banner-main">
-        	<h4>首付一半 还款灵活</h4>
-            <h3>查看详细</h3>
-        </div>
+	<div class="lis-title">
+    <a href="#" class="parting">默认排序</a>
+    <a href="#" class="parting">品牌</a>
+    <a href="#">价格</a>
+    <a href="#" class="screen">筛选</a>
     </div>
-    
-    <div class="index-box">
-    	<div class="banner"><img src="images/banner.png"></div>
-        <div class="banner-main">
-        	<h4>首付一半 还款灵活</h4>
-            <h3>查看详细</h3>
-        </div>
-    </div>
-    
-    <div class="index-box">
-    	<div class="banner"><img src="images/banner.png"></div>
-        <div class="banner-main">
-        	<h4>首付一半 还款灵活</h4>
-            <h3>查看详细</h3>
-        </div>
-    </div>
-   
+    	
+   <div class="models-main">
+       <div class="modelses">
+       	  <div class="car-show"><img src="images/car_1.png"></div>
+          <div class="car-main">
+			<h2>起亚K2</h2>
+            <div>xx街道xx小区</div>
+            <div class="payment">首付15000</div>
+          </div>
+          <div class="car-time">2016-2-1</div>
+       </div>
+       
+         <div class="modelses">
+       	  <div class="car-show"><img src="images/car_2.png"></div>
+          <div class="car-main">
+			<h2>起亚K2</h2>
+            <div>xx街道xx小区</div>
+            <div class="payment">首付15000</div>
+          </div>
+          <div class="car-time">2016-2-1</div>
+       </div>
+       
+         <div class="modelses">
+       	  <div class="car-show"><img src="images/car_3.png"></div>
+          <div class="car-main">
+			<h2>起亚K2</h2>
+            <div>xx街道xx小区</div>
+            <div class="payment">首付15000</div>
+          </div>
+          <div class="car-time">2016-2-1</div>
+       </div>
+
+
 <!--底部隐藏-->
 <div class="botton-hide">
-</div>    
+</div>   
+   </div>
+    
     
 </div>
 
 
 <!--底部-->
 <div class="botton">
-    <a class="bti-1-cur"  id="dh_1" href="index.html">首页</a>
+    <a class="bti-1"  id="dh_1" href="index.html">首页</a>
     <a class="bti-2"  id="dh_2" href="Popular-models.html">热门车型</a>
-    <a class="bti-3"  id="dh_3"  href="online-booking.html">在线预订</a>
+    <a class="bti-3-cur"  id="dh_3"  href="online-booking.html">在线预订</a>
     <a class="bti-4"  id="dh_4"  href="#">我的</a>
 </div>
 
@@ -100,7 +117,10 @@ bth_4.onclick=function(){
 init();
 bth_4.className="bti-4-cur";
 } 
-
+//-----------------------
+$(".modelses").click(function(){
+	window.location.href='car-minute.html'
+	})
 
 </script>
 </body>

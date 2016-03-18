@@ -20,10 +20,7 @@
 <body>
 
 <div class="co-top">
-<div class="location">
-<button id="map" data-role="none" ></button>
-<a href="#" data-role="none" >深圳</a>
-</div>
+<a href="login.html"><i class="fa-choose fa fa-angle-left"></i></a>
 <div class="co-login">在线预订</div>
  <button id="nav-cell" data-role="none" ></button>
 </div>
@@ -50,20 +47,20 @@
   
    		<div>
 		<div id="content">
+        
 		<div id="signatureparent">
 		<div id="signature">
         </div>
         </div>
-		<div id="tools"></div>
+        
+		<div id="tools">
 		<input type="button" value="确认保存" id="btnTest">
         <input type="button" value="重写" id="reset">
-		手写的值为:<input type="text" name="" id="memo">
-        <div>
-        <div id="displayarea"></div>
         </div>
-		</div>
-		<div id="scrollgrabber"></div>
-		</div>
+        <div>
+        
+        </div>
+		
 
  
   
@@ -75,7 +72,7 @@
     
 </div>
 <div class="co-bottom">
-	<div class="clientele-btn"><a href="booking3.html">下一步</a></div>
+	<div class="clientele-btn"><a href="#">确认提交</a></div>
 </div>
 </div>
 
@@ -95,7 +92,19 @@
     <a class="bti-4"  id="dh_4"  href="#">我的</a>
 </div>
 
-
+<div class="succeed-remind">
+<div class="remind"></div>
+<div class="remind-box">
+	<div class="succeed">
+    	<div class="hint">提示</div>
+        <div class="reset">
+        您已成功提交信息
+        <span>稍后会有专员和您联系</span>
+        </div>
+        <a>确定</a>
+    </div>
+</div>
+</div>
 
 <script type="text/javascript"></script>
 <script>
@@ -141,34 +150,16 @@ http://dojofoundation.org/license for more information.
 	};
 })(jQuery);
 
-
-
-
-
 (function($){
 
 $(document).ready(function() {
+//隐藏
+	$(".succeed-remind").hide()	
+	
 	
 	// This is the part where jSignature is initialized.
 	var $sigdiv = $("#signature").jSignature({'UndoButton':true})
 	
-	// All the code below is just code driving the demo. 
-	, $tools = $('#tools')
-	, $extraarea = $('#displayarea')
-	, pubsubprefix = 'jSignature.demo.'
-	
-	// 点击按钮显示值
-	$("#btnTest").bind('click', function(e){
-		// 取得所画的模板
-		var data = $sigdiv.jSignature('getData', 'image')
-		// 将取得值设置到文本中
-		$("#memo").val(data.join(','))
-		// 将取得的值设置到显示区域
-		$.publish(pubsubprefix + data[0], data);
-		var i = new Image()
-		i.src = 'data:' + data[0] + ',' + data[1]
-		$(i).appendTo($extraarea)
-	}).appendTo($tools)
 
 	$("#reset").bind('click', function(e){
 		$sigdiv.jSignature('reset')
@@ -180,8 +171,17 @@ $(document).ready(function() {
 	}
 	
 })
-
 })(jQuery)
+
+//-----------------------------
+
+
+$(".clientele-btn").click(function(){
+	$(".succeed-remind").show()
+	})
+$(".succeed a").click(function(){
+	window.location.href='index.html'
+	})
 </script>
 </body>
 </html>
