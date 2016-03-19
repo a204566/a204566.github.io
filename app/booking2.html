@@ -11,13 +11,14 @@
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/booking2.css">
+<script src="js/jquery-2.1.4.min.js"></script>
 <title>无标题文档</title>
 </head>
 
 <body>
 
 <div class="co-top">
-<a href="login.html"><i class="fa-choose fa fa-angle-left"></i></a>
+<a href="booking1.html"><i class="fa-choose fa fa-angle-left"></i></a>
 <div class="co-login">在线预订</div>
  <button id="nav-cell" data-role="none" ></button>
 </div>
@@ -40,7 +41,7 @@
     <div class="clientele-margin"></div>
     <table class="clientele">
     <tr>
-    	<td style="width:45%">企业客户名称</td>
+    	<td style="width:35%">企业客户名称</td>
         <td><input class="clientele-input"maxlength="4"></td>
     </tr>
     </table>
@@ -48,7 +49,7 @@
     <div class="clientele-margin"></div>
     <table class="clientele">
     <tr>
-    	<td style="width:45%">法人姓名</td>
+    	<td style="width:35%">法人姓名</td>
         <td><input class="clientele-input"maxlength="4"></td>
     </tr>
     </table>
@@ -56,7 +57,7 @@
     <div class="clientele-margin"></div>
     <table class="clientele">
     <tr>
-    	<td style="width:45%">法人身份证号</td>
+    	<td style="width:35%">法人身份证号</td>
         <td><input class="clientele-input"maxlength="18"></td>
     </tr>
     </table>
@@ -64,7 +65,7 @@
       <div class="clientele-margin"></div>
     <table class="clientele">
     <tr>
-    	<td style="width:45%">企业紧急电话</td>
+    	<td style="width:35%">企业紧急电话</td>
         <td><input class="clientele-input"maxlength="11"></td>
     </tr>
     </table>
@@ -78,7 +79,7 @@
     <div class="clientele-margin"></div>
     <table class="clientele">
     <tr>
-    	<td style="width:45%">注册号</td>
+    	<td style="width:35%">注册号</td>
         <td><input class="clientele-input2"></td>
     </tr>
     </table>
@@ -86,15 +87,15 @@
     <div class="clientele-margin"></div>
     <table class="clientele">
     <tr>
-    	<td style="width:45%">经办人姓名</td>
+    	<td style="width:35%">经办人姓名</td>
         <td><input class="clientele-input2"maxlength="4"></td>
     </tr>
     </table>
     
     <div class="clientele-margin"></div>
-    <table class="clientele" style="border:none">
+    <table class="clientele">
     <tr>
-    	<td style="width:45%">经办人身份证号</td>
+    	<td style="width:35%">经办人身份证号</td>
         <td><input class="clientele-input2"maxlength="18"></td>
     </tr>
     </table>
@@ -102,7 +103,7 @@
      <div class="clientele-margin"></div>
     <table class="clientele" style="border:none">
     <tr>
-    	<td style="width:45%">经办人紧急电话</td>
+    	<td style="width:35%">经办人紧急电话</td>
         <td><input class="clientele-input2"maxlength="11"></td>
     </tr>
     </table>
@@ -113,7 +114,7 @@
     
 </div>
 <div class="co-bottom">
-	<div class="clientele-btn"><a href="booking3.html">下一步</a></div>
+	<div class="clientele-btn"><a >下一步</a></div>
 </div>
 </div>
 
@@ -123,6 +124,14 @@
 </div>    
     
 </div>
+
+
+<script type="text/javascript">
+$(".clientele-btn").click(function(){
+	window.location.href='booking3.html'
+	})
+</script>
+
 
 </body>
 </html>

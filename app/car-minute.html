@@ -43,7 +43,7 @@
               <div class="monthly-main">
             	<div class="monthly">
             	<a class="monthly-put">首付25000</a>
-                <a class="payment">24期月供3690</a>
+                <a>24期月供3690</a>
                 <a>36期月供2820</a>
             	</div>
                 <a class="book" href="booking1.html">立即预订</a>
@@ -60,14 +60,51 @@
     </div>
     
 <div class="car-message">
-   	<table class="message">
-    	<tr><td>车型</td></tr>
-    	<tr class="bg"><td>变速箱</td></tr>
-    	<tr><td>综合油耗</td></tr>
-        <tr class="bg"><td>最高车速</td></tr>
-        <tr><td>乘客人数</td></tr>
-        <tr class="bg"><td>排量/排放</td></tr>
-    </table>
+	<div class="message">
+    	<div class="message1">
+        	<a id="left">车型</a>
+            <a id="right">2015款起亚K2 1.4L 手动 GL</a>
+        </div>
+    </div>
+    <div class="message bg">
+    	<div class="message1">
+        	<a id="left">变速箱</a>
+            <a id="right">5挡 手动</a>
+        </div>
+    </div>
+    <div class="message">
+    	<div class="message1">
+        	<a id="left">综合油耗</a>
+            <a id="right">6.1L</a>
+        </div>
+    </div>
+    <div class="message bg">
+    	<div class="message1">
+        	<a id="left">最高车速</a>
+            <a id="right">180km/h</a>
+        </div>
+    </div>
+     <div class="message">
+    	<div class="message1">
+        	<a id="left">乘客人数</a>
+            <a id="right">5人</a>
+        </div>
+    </div>
+     <div class="message bg">
+    	<div class="message1">
+        	<a id="left">综合油耗</a>
+            <a id="right">6.1(L/100km)</a>
+        </div>
+    </div>
+     <div class="message">
+    	<div class="message1">
+        	<a id="left">排量/排放</a>
+            <a id="right">1.4L/欧V</a>
+        </div>
+    </div>
+    
+    
+    
 </div>
 
 
@@ -96,7 +133,11 @@ $("select").attr('data-role','none');
 //Solve a link failure
 $("a").attr('data-ajax',false);
 
+$(".minute-return").click(function(){
+	window.location.href='Popular-models.html'
+	})
 
+//---------------
 var bullets = document.getElementById('position').getElementsByTagName('li');
 var banner = Swipe(document.getElementById('mySwipe'), {
 	auto: 2000,
