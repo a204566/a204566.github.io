@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/my-activity-minute.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.3.2.js"></script>
+
+<title>无标题文档</title>
+</head>
+
+<body>
+
+
+<div class="co-top"><a href="my-message.html"><i class="fa-choose fa fa-angle-left"></i></a><div class="co-login">我的消息</div></div>
+ <div>
+ <button id="nav-cell" data-role="none" ></button>
+</div>
+<div class="top-hide"></div>
+<div class="co-contain">
+  <div class="activity-title">
+     <em>起亚K2大礼包，强势来袭</em>
+     <div class="activity-minute-time">2016-3-8</div>
+   </div>
+  
+   <div class="activity-minute-main">
+     <div class="activity-minute-banner">
+     <img src="images/activit_banner.png">
+     </div>
+     
+     <div class="activity-main">
+     	<div class="activity-theme">
+        	<em>团购主题：</em>
+            <a href="#" id="theme-title">3月13日深圳东风悦达起亚超级团购会</a>
+        </div>
+        <div class="activity-theme">
+        	<em>团购日期：</em>
+            <a href="#">03月13日 下午 14:00-18:00</a>
+        </div>
+     	<div class="activity-theme">
+        	<em>团购主题：</em>
+            <a href="#">深圳起亚4S店</a>
+        </div>
+     </div>
+   </div>
+    
+</div>
+
+
+
+<script>
+$("input").attr('data-role','none');  
+$("select").attr('data-role','none');
+//Solve a link failure
+$("a").attr('data-ajax',false);
+ 
+
+$(".modelses").click(function(){
+	window.location.href='my-order-minute.html'
+	})
+</script>
+</body>
+</html>

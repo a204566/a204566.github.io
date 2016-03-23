@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/personage.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/swipe.js"></script>
+
+<title>无标题文档</title>
+</head>
+
+<body>
+
+
+
+<div class="co-contain">     
+ 	<div class="benner">
+    	<div class="banner-bg"><img src="images/banner-bg.png"></div>
+		<div class="user"><img src="images/use.png"></div>    
+    </div>
+    <div class="personage-main">
+    	<div class="my-order">
+        	<div class="my-icon"></div>
+            <div class="my-main">我的订单</div>
+            <div class="my-arrows"></div>
+        </div>
+        
+        <div class="my-bill">
+        	<div class="my-icon"></div>
+            <div class="my-main">我的账单</div>
+            <div class="my-arrows"></div>
+        </div>
+        
+        <div class="my-illegal">
+        	<div class="my-icon"></div>
+            <div class="my-main">我的违章</div>
+            <div class="my-arrows"></div>
+        </div>
+        <div class="my-message">
+        	<div class="my-icon"></div>
+            <div class="my-main">我的消息</div>
+            <div class="my-arrows"></div>
+        </div>
+        
+    </div>
+</div>
+   
+<!--底部隐藏-->
+<div class="botton-hide">
+</div>    
+    
+
+
+
+<!--底部-->
+<div class="botton">
+    <a class="bti-1"  id="dh_1" href="index.html">首页</a>
+    <a class="bti-2"  id="dh_2" href="Popular-models.html">热门车型</a>
+    <a class="bti-3"  id="dh_3"  href="online-booking.html">在线预订</a>
+    <a class="bti-4-cur"  id="dh_4"  href="personage.html">我的</a>
+</div>
+
+
+<script>
+$("input").attr('data-role','none');  
+$("select").attr('data-role','none');
+//Solve a link failure
+$("a").attr('data-ajax',false);
+
+$(".minute-return").click(function(){
+	window.location.href='Popular-models.html'
+	})
+$(".user").click(function(){
+	window.location.href='login.html'
+	})
+$(".my-order").click(function(){
+	window.location.href='my-order.html'
+	})
+$(".my-bill").click(function(){
+	window.location.href='my-bill.html'
+	})
+$(".my-illegal").click(function(){
+	window.location.href='my-illegal.html'
+	})	
+$(".my-message").click(function(){
+	window.location.href='my-message.html'
+	})
+
+
+
+
+
+
+ //botton
+var obth=document.getElementById("dh_1");
+var bth_2=document.getElementById("dh_2");
+var bth_3=document.getElementById("dh_3");
+var bth_4=document.getElementById("dh_4");
+
+function init(){
+	obth.className ="bti-1";
+	bth_2.className ="bti-2";
+	bth_3.className ="bti-3";
+	bth_4.className ="bti-4"
+	}
+obth.onclick=function(){
+init();
+obth.className="bti-1-cur";
+}
+bth_2.onclick=function(){
+init();
+bth_2.className="bti-2-cur";
+}
+bth_3.onclick=function(){
+init();
+bth_3.className="bti-3-cur";
+}   
+bth_4.onclick=function(){
+init();
+bth_4.className="bti-4-cur";
+} 
+
+
+</script>
+</body>
+</html>

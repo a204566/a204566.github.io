@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+
+
+#nav-cell {
+position:fixed;
+right: 10px;
+top: 0px;
+}
+
+
+/*models*/
+.models-main{
+	width:100%;
+	position: absolute;
+	}
+.modelses{
+	width:100%;
+	background-color:#fff;
+	padding:10px;
+	border:solid 1px #e0dfdf;
+	overflow:hidden;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+    margin-bottom: 10px;
+	}
+.modelses:active{
+	-moz-box-shadow: 0px 0px 1px #2a8ae0;
+    -webkit-box-shadow: 0px 0px 1px #2a8ae0;
+    box-shadow: 0px 0px 1px #2a8ae0;
+	}	 
+.car-show,.car-main,.models-arrows{ float:left} 
+.car-show img{
+	width:100%;
+	height:auto
+	}   
+.car-show{width:30%} 
+.car-main{color: #939ca2;}
+.car-main{ padding-left:15px}
+.car-main h2{ font-weight:normal;margin-bottom: 10px; color:#343333}
+.name,.number{color:#86868d; float:left;margin-right: 10px;}  
+.models-arrows{
+    display: block;
+	float:right
+	}
+@media screen and (min-width: 375px) and (max-width:410px){	
+.modelses{
+	font-size:1.8rem;
+    margin-bottom: 10px
+	} 
+.fa2 {
+  font-size: 35px;
+  line-height: 75px;
+}
+}  
+@media screen and (min-width: 410px) and (max-width:414px){	
+.modelses{
+	font-size:2rem;
+	margin-bottom: 10px
+	} 
+.fa2 {
+    font-size: 50px;
+    color: #BBBBBB;
+    line-height: 90px;
+}
+}  

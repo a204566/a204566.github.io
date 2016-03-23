@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+
+
+#nav-cell {
+position:fixed;
+right: 10px;
+top: 0px;
+}
+
+
+/*models*/
+.models-main{
+	width:100%;
+	}
+.modelses{
+	width:100%;
+	background-color:#fff;
+	padding:10px;
+	border:solid 1px #e0dfdf;
+	overflow:hidden;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+    margin-bottom: 10px;
+	} 
+.car-show,.car-main{float:left} 
+.car-show img{
+	width:100%;
+	height:auto
+	}   
+.car-show{width:30%} 
+.car-main{color: #939ca2;}
+.car-main{ padding-left:15px}
+.car-main h2{ font-weight:normal;margin-bottom: 10px; color:#343333}
+.name,.number{color:#86868d; float:left;margin-right: 10px;}
+
+/*-----------------------------------*/
+.modelses-main{
+	width:100%;
+	background-color:#FFFFFF;
+	border-top:solid 1px #d5d5d5;
+	border-bottom:solid 1px #d5d5d5;
+	}
+.down-payment{background-color:#FFFFFF; overflow:hidden; border-bottom:solid 1px #d5d5d5}
+.down-payment a{
+	display:block;
+	font-family:"微软雅黑";
+	font-size:1.8rem;
+	line-height:35px
+	}
+.Final-payment{background-color:#FFFFFF; overflow:hidden;}
+.Final-payment a{
+	display:block;
+	font-family:"微软雅黑";
+	font-size:1.8rem;
+	line-height:35px
+	}
+.modelses-left,.modelses-right{float:left}
+.modelses-left{
+	color:#cd303b;
+	padding-left:10px;
+	} 
+.modelses-right{
+	float:right;
+	padding-right:10px
+	} 
+.Customer-Hotline{
+	width:100%;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+	color:#aeaeae;
+	margin-top:5px;
+	}
+@media screen and (min-width: 375px) and (max-width:410px){	
+.modelses{
+	font-size:1.8rem;
+    margin-bottom: 10px
+	} 
+}  
+@media screen and (min-width: 414px) and (max-width:420px){	
+.modelses{
+	font-size:2rem;
+	margin-bottom: 15px
+	} 
+.Final-payment a{
+	font-size:2rem;
+	line-height:40px
+	}
+.down-payment a{
+	font-size:2rem;
+	line-height:40px
+	}
+.Customer-Hotline{
+	font-size:1.8rem;
+	margin-top:5px;
+	}
+}  

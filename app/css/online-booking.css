@@ -3,7 +3,7 @@
 a{color:#94999d}
 .chose{ color:#2a8ae0}
 /*输入框*/
- .co-login{ display:block; color:#fff; font-size:2rem; width:100%; text-align:center; position:relative;font-family:"Microsoft Yahei";} 
+ .co-login{ display:block; color:#fff; width:100%; text-align:center; position:relative;font-family:"Microsoft Yahei";} 
 #nav-cell {
 position:fixed;
 right: 10px;

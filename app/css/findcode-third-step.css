@@ -22,9 +22,4 @@ a{color:#94999d}
 			.pwd-put b.favour-icon{background:url(../images/weixin_login_icon_card.png) no-repeat center center; width:32px; height:32px; position:absolute; top:3.1rem; left:2rem;}
 			
 .co-bottom{ margin-top:3rem; width:100%;}
-	
-		.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}
-	.login-other{ width:90%; margin:0 auto; margin-top:1rem;}
-		.login-other i{ font-style:normal;font-family:"Microsoft Yahei" ; font-size:1.125rem; color:#47b0ed;}
-		.login-other i a{ color:#47b0ed;}
-		.login-other i.login-forgetpwd{ float:right;}	
+.login-btn a{ background:#47b0ed; color:#fff; display:inline-block; width:100%; border-radius:5px;}

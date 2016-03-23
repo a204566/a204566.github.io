@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/my-bill.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<title>无标题文档</title>
+</head>
+
+<body>
+
+
+<div class="co-top">
+<a href="personage.html"><i class="fa-choose fa fa-angle-left"></i></a>
+<div class="co-login">我的账单</div>
+</div>
+
+<div class="top-hide"></div>
+<div class="co-contain">
+    	
+   <div class="models-main">
+       <div class="modelses">
+       	  <div class="car-show"><img src="images/my-order.png"></div>
+          <div class="car-main">
+			<h2>起亚K2</h2>
+            <div class="name">张三</div>
+            <div class="number">浙***69pw</div>
+          </div>
+       </div>
+   </div>
+    
+    <div class="modelses-main">
+    	<div class="down-payment">
+        <a class="modelses-left">当月应缴纳租金</a>
+        <a class="modelses-right">3600元</a>
+        </div>
+        
+        <div class="down-payment">
+        <a class="modelses-left">罚息</a>
+        <a class="modelses-right">0元</a>
+        </div>
+         
+         <div class="Final-payment">
+        <a class="modelses-left">逾期管理费</a>
+        <a class="modelses-right">0元</a>
+        </div>
+    </div>
+        <div class="Customer-Hotline">
+        尊敬的客户，假如当月在最后缴款日还没有收到您的
+资金的话，将会产生罚息，逾期管理费。并影响您信
+用问题，请按时缴纳。
+		</div>
+</div>
+
+<div class="co-bottom">
+	<div class="login-btn"><a href="#">刷新</a></div>
+</div>
+
+
+<script>
+$("input").attr('data-role','none');  
+$("select").attr('data-role','none');
+//Solve a link failure
+$("a").attr('data-ajax',false)
+</script>
+</body>
+</html>

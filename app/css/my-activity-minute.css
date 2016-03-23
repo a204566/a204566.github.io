@@ -1,0 +1,99 @@
+%;@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+
+#nav-cell {
+position:fixed;
+right: 10px;
+top: 0px;
+}
+
+
+
+.co-contain{ background-color:#fff;border-bottom: solid 1px #CCCCCC;}
+.activity-title{
+	width:90%;
+	margin:auto;
+	padding-bottom: 5px;
+	}
+.activity-title em{
+	line-height:40px;
+	font-size: 2.2rem;
+    font-family:"Microsoft Yahei";	
+	}
+.activity-minute-time{
+	color:#b1b3b7;
+	line-height:25px;
+	font-size: 1.7rem;
+    font-family:"Microsoft Yahei";
+	}
+.activity-minute-banner{
+	width:90%;
+	margin:auto;
+	border:solid 1px #DFDFDF;
+	}
+.activity-minute-banner img{
+	width:100%;
+	}
+/*----*/	
+.activity-main{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+	margin-top: 10px
+	}
+.activity-theme{ overflow:hidden;margin-bottom: 10px;}
+.activity-theme em,.activity-theme a,#theme-title{ float:left}
+.activity-theme em{
+	font-size: 1.7rem;
+    font-family:"Microsoft Yahei";	
+	width: 30%;
+	}
+.activity-theme a{
+	font-size: 1.7rem;
+    font-family:"Microsoft Yahei";
+	color:#494848;	
+	width: 70%;
+	display:block
+	}
+#theme-title{
+	display:block;
+	color:#e72525
+	}
+@media screen and (min-width: 375px) and (max-width:410px){	
+.message-title em{
+	line-height:50px;
+	font-size: 2.5rem;
+	}
+.message-minute-time{
+	line-height:30px;
+	font-size: 1.9rem;
+	}
+.message-minute-main em{
+    font-size: 2.1rem;
+    margin-top: 15px;
+	line-height: 28px;
+	}
+.message-minute-main p{
+    font-size: 2rem;
+	}
+}  
+@media screen and (min-width: 410px) and (max-width:414px){	
+.message-title em{
+	line-height:50px;
+	font-size: 2.5rem;
+	}
+.message-minute-time{
+	line-height:30px;
+	font-size: 2rem;
+	}
+.message-minute-main em{
+    font-size: 2.1rem;
+    margin-top: 15px;
+	line-height:28px
+	}
+.message-minute-main p{
+    font-size: 2rem;
+	}
+}  

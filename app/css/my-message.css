@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+a{color:#94999d}
+.chose{ color:#2a8ae0}
+
+
+#nav-cell {
+position:fixed;
+right: 10px;
+top: 0px;
+}
+
+
+/*models*/
+.message-main{
+	width:100%;
+	position: absolute;
+	}
+.message{
+	width:100%;
+	background-color:#fff;
+	padding:10px;
+	border-bottom:solid 1px #e0dfdf;
+	overflow:hidden;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+	}
+.message:active{
+	background-color:#EBEEF1
+	}
+.activity{
+	width:100%;
+	background-color:#fff;
+	padding:10px;
+	border-bottom:solid 1px #e0dfdf;
+	overflow:hidden;
+	font-family:"微软雅黑";
+	font-size:1.6rem;
+	}
+.activity:active{
+	background-color:#EBEEF1
+	}	 
+.message-show,.main{ float:left} 
+.message-show img{
+	width:100%;
+	height:auto
+	}   
+.message-show{width:30%} 
+.main{
+	color: #939ca2;
+	padding-left:15px;
+	width:70%
+	}
+.main h2{
+	font-weight:normal;
+	margin-bottom: 20px; 
+	color:#343333;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	font-size:2rem;
+	}
+.message-box{ overflow:hidden}
+.my-details,.my-time{color:#86868d; float:left}  
+.my-details{ color:#cd303b}
+.my-time{ float:right; color:#9fa6af}
+@media screen and (min-width: 375px) and (max-width:410px){	
+.message{
+	font-size:1.8rem;
+	} 
+.fa2 {
+  font-size: 35px;
+  line-height: 75px;
+}
+}  
+@media screen and (min-width: 410px) and (max-width:414px){	
+.message{
+	font-size:2rem;
+	} 
+.fa2 {
+    font-size: 50px;
+    color: #BBBBBB;
+    line-height: 90px;
+}
+}  
