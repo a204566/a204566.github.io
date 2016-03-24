@@ -159,6 +159,20 @@ body{ background-color:#fff}
 .car-message{
    font-size: 1.7rem;
    }
+.minute-return{
+	 width:40px; 
+	 height:40px;
+	 background-size: auto 32px;
+	 left: 20px;
+	 top: 20px;
+	 }
+.minute-memu{
+	width:40px; 
+	height:40px;
+	background-size: 31px auto;
+	right: 20px;
+	top: 20px;
+	}
 }
 
 @media screen and (min-width: 410px) and (max-width:414px){	
@@ -181,6 +195,20 @@ body{ background-color:#fff}
   line-height: 50px;
   margin-top: 2%;
 }
+.minute-return{
+	 width:40px; 
+	 height:40px;
+	 background-size: auto 32px;
+	 left: 20px;
+	 top: 20px;
+	 }
+.minute-memu{
+	width:40px; 
+	height:40px;
+	background-size: 31px auto;
+	right: 20px;
+	top: 20px;
+	}
 }
 
 

@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/jquery.mobile-1.3.2.js"></script>
-
+<script src="js/classie.js"></script>
 <title>无标题文档</title>
 </head>
 
@@ -67,40 +67,86 @@
 </div>
 
 
+<div id="cover"></div>
+<body class="cbp-spmenu-push">
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<h3>资料库</h3>
+			<a href="#">资料库列表</a>
+			<a href="#">登记证扫描件列表</a>
+			<a href="#">指标列表</a>
+			<a href="#">车辆抵押列表</a>
+			<a href="#" class="click">车辆盘点列表</a>
+			<a href="#">车辆状态相关报表核对</a>
+            <a href="#">车辆年审列表</a>
+		</nav>
 <script>
 $("input").attr('data-role','none');  
 $("select").attr('data-role','none');
 //Solve a link failure
 $("a").attr('data-ajax',false);
+
+$(".index-box").click(function(){
+	window.location.href='car-minute.html'
+	})
+
  //底部
-var obth=document.getElementById("dh_1");
-var bth_2=document.getElementById("dh_2");
-var bth_3=document.getElementById("dh_3");
-var bth_4=document.getElementById("dh_4");
+//var obth=document.getElementById("dh_1");
+//var bth_2=document.getElementById("dh_2");
+//var bth_3=document.getElementById("dh_3");
+//var bth_4=document.getElementById("dh_4");
+//
+//function init(){
+//	obth.className ="bti-1";
+//	bth_2.className ="bti-2";
+//	bth_3.className ="bti-3";
+//	bth_4.className ="bti-4"
+//	}
+//obth.onclick=function(){
+//init();
+//obth.className="bti-1-cur";
+//}
+//bth_2.onclick=function(){
+//init();
+//bth_2.className="bti-2-cur";
+//}
+//bth_3.onclick=function(){
+//init();
+//bth_3.className="bti-3-cur";
+//}   
+//bth_4.onclick=function(){
+//init();
+//bth_4.className="bti-4-cur";
+//} 
+//------------------------------------------------
+//侧栏
+$("#cover").hide()
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRight = document.getElementById( 'nav-cell' ),
+				body = document.body;
 
-function init(){
-	obth.className ="bti-1";
-	bth_2.className ="bti-2";
-	bth_3.className ="bti-3";
-	bth_4.className ="bti-4"
-	}
-obth.onclick=function(){
-init();
-obth.className="bti-1-cur";
-}
-bth_2.onclick=function(){
-init();
-bth_2.className="bti-2-cur";
-}
-bth_3.onclick=function(){
-init();
-bth_3.className="bti-3-cur";
-}   
-bth_4.onclick=function(){
-init();
-bth_4.className="bti-4-cur";
-} 
+		
+			showRight.onclick = function() {
+				$("#cover").toggle()
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+				$(body).css({"overflow-y":"hidden"})
+			};
+			
+			
+//黑屏
+			$("#cover").click(function(){
+				$("#cover").toggle()
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+				})
 
+//-------------
+$("#cbp-spmenu-s2 a").on("tap",function(){
+		$("#cbp-spmenu-s2 a").removeClass("click")
+		$(this).addClass("click")
+		})
 
 </script>
 </body>

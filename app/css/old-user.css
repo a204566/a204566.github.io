@@ -14,7 +14,10 @@ a{color:#94999d}
 .pwd-input{  height:40px; line-height:40px; width:100%; border-radius: 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede; border-radius:5px;background:#fff;}
 .pwd-input2{  height:40px; line-height:40px; width:100%; border-radius:0px 0px 5px 5px; padding-left:5rem; font-family:"Microsoft Yahei"; font-size:2rem; color:#848484;border:1px solid #dedede;}
 .vertify-input{ width:58%; }
-
+.vertify-input2 a:active{
+	background-color:#C7C7C7;
+	color:#FFFFFF;
+	}
 
 			
 .co-bottom{ margin-top:3rem; width:100%;}
