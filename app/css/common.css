@@ -255,13 +255,13 @@ span{ display:inline-block; height:28px; width:80px; background:url(../images/mo
 
 /*nav-cell*/
 /*Checkbox Five */
-/*.checkboxFive {
+.checkboxFive {
 	margin: 15px 0px 0px 0px;
 	position: relative;
 }
-*/
+
 /*Create the box for the checkbox*/
-/*.checkboxFive label {
+.checkboxFive label {
 	cursor: pointer;
 	position: absolute;
 	width: 25px;
@@ -271,11 +271,11 @@ span{ display:inline-block; height:28px; width:80px; background:url(../images/mo
 	background: #eee;
 	border:1px solid #ddd;
 	border-radius: 500px;
-}*/
+}
 
 
 /*Display the tick inside the checkbox*/
-/*.checkboxFive label:after {
+.checkboxFive label:after {
 	opacity: 0.2;
 	content: '';
 	position: absolute;
@@ -293,16 +293,16 @@ span{ display:inline-block; height:28px; width:80px; background:url(../images/mo
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-}*/
+}
 
 
 /*Create the hover event of the tick*/
-/*.checkboxFive label:hover::after {
+.checkboxFive label:hover::after {
 	opacity: 0.5;
-}*/
+}
  
 /*Create the checkbox state for the tick*/
-/*.checkboxFive input[type=checkbox]:checked + label:after {
+.checkboxFive input[type=checkbox]:checked + label:after {
 	opacity: 1;
 	background: transparent;
 	top: 6px;
@@ -310,13 +310,13 @@ span{ display:inline-block; height:28px; width:80px; background:url(../images/mo
 	border: 3px solid #fff;
 	border-top: none;
 	border-right: none;
-}*/
+}
 /*change background*/
-/*.checkboxFive input[type=checkbox]:checked + label {
+.checkboxFive input[type=checkbox]:checked + label {
 	opacity: 1;
 	background-color:#4bbae1;
 	border:1px solid #4bbae1;
-}*/
+}
 
 
 /*bottom*/
@@ -453,7 +453,7 @@ html{ font-size:9.5px}
 .vertify-input2{ height:50px; line-height:50px; font-size:2rem;}}
 @media screen and (min-width: 320px) and (max-width:374px){	
 html{ font-size:9px}
-/*.checkboxFive {
+.checkboxFive {
 	margin: 5px 0px 0px 0px;
 	position: relative;
 }
@@ -471,5 +471,5 @@ html{ font-size:9px}
 .checkboxFive input[type=checkbox]:checked + label:after {
 	top: 3px;
 	left: 2px;
-}*/
+}
 }
