@@ -43,8 +43,19 @@ body{ background-color:#fff}
 .addWrap .swipe{overflow: hidden;visibility: hidden;position:relative;height: 230px;}
 .addWrap .swipe-wrap{overflow:hidden;position:relative;}
 .addWrap .swipe-wrap > div {float: left;width: 100%;position:relative;}
-
-#position{ position:absolute; bottom:10px; right:32%; padding-right:8px; margin:0; opacity: 0.4; width:100%;text-align:right;}
+#position-box{
+	bottom: 10px;
+	position: relative;
+	}
+#position{ 
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	opacity: 0.4;
+	width: 100%;
+	text-align: right;
+	margin-right: -50px;
+	}
 #position li{width:15px;height:15px;margin:0 5px;display:inline-block;-webkit-border-radius:500px;border-radius:500px;background-color:#555555;}
 #position li.cur{background-color:#000;}
 .img-responsive { display: block;width: 100%;  height: auto;}

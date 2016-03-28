@@ -54,6 +54,46 @@ a{color:#94999d}
     line-height: 25px;
     color: #696969;
 	}
+
+
+/*------------*/
+.over{
+	font-size:1.8rem;
+	text-align:right;
+	font-family:"Microsoft Yahei";
+	color:#3478B5;
+    line-height: 30px;	
+	border-bottom: solid 1px #222;
+	border-top: solid 1px #222;
+	}
+.marry{
+	width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    border: solid 1px red;
+	}
+.marry-sort-list{
+	 width: 400px;
+    height: 180px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	color:#252525;
+	}
+.marry-sort-list li{
+	font-size:2rem;
+	text-align:center;
+	font-family:"Microsoft Yahei";
+	line-height:30px;
+	}
+.marry-sort-txt{
+display: inline-block;
+margin-right: 4px;
+width: 30px;
+color: #5B5B5B;
+}
 @media screen and (min-width: 375px) and (max-width:413px){	
 .step-button{
 	top: 6px;

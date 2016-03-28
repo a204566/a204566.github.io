@@ -22,8 +22,13 @@ input[type=checkbox] {
 	visibility: hidden;
 }
 
-
-/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----communal--------*/
+.marry-chose{
+	border-bottom: solid 1px #9C9C9C;
+    border-top: solid 1px #9C9C9C;
+	color:#3478B5
+	}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
 .header{ width:100%; padding:0.8em 0; background:#fff;}
 .co_box{ width:90%; margin:0 auto;}
 .mobile_logo{ display:inline-block;}
@@ -31,11 +36,8 @@ input[type=checkbox] {
 .mobile_fuction{ display:inline-block; float:right; margin-top:1.1em;}
 .mobile_login{ width:32px; height:32px; overflow:hidden;background:url(../images/mobile_index_icon_05.png) 0px -32px no-repeat; display:inline-block; margin-right:1em;}
 .mobile_nav{width:32px; height:32px; overflow:hidden; background:url(../images/mobile_index_icon_05.png)  no-repeat; display:inline-block;}
-
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 .container{ width:100%; height:16rem; background:#f4f4f4; margin-bottom:1rem;}
-
-
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 .co-grids{ width:90%; margin:0 auto; margin-bottom:1rem;}
 .co-grids3{ width:50%; background:#ff9900; height:12rem; display:inline-block;}
