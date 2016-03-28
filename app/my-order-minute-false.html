@@ -29,7 +29,7 @@
     	<div class="state">
         	<div class="state-icon"></div>
             <div class="audit-state">
-            订单状态：<a>已审核</a>
+            订单状态：<a>待审核</a>
             </div>
         </div>
         <div class="audit-main">
@@ -67,12 +67,7 @@
         </div>
     </div>
     
-    <div class="audit-show">
-    	<a class="audit-botton">审核通过</a>
-        <a class="audit-remind">审核通过可前往门店办理业务</a>
-    </div>
-    
-      <div class="audit-show-false">
+    <div class="audit-show-false">
     	<a class="audit-botton-false">待审核</a>
         <a class="audit-remind">稍后将会有审核专员审核</a>
     </div>
@@ -80,7 +75,7 @@
     
     
 </div>
-<div class="hide"></div>
+
 
 
 <script>
@@ -88,18 +83,6 @@ $("input").attr('data-role','none');
 $("select").attr('data-role','none');
 //Solve a link failure
 $("a").attr('data-ajax',false)
-
-var scert=prompt("请输入待审核/已审核","")
-if(scert=="已审核"){
-		$(".hide").hide()
-		$(".audit-state").html(scert)
-		$(".audit-show-false").hide()
-		}
-	else{
-		$(".hide").hide()
-		$(".audit-state").html(scert)
-		$(".audit-show").hide()
-		}
 </script>
 </body>
 </html>

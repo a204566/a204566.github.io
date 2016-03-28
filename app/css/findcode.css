@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*输入框*/
+
 .co-contain{ margin-top:4rem; width:100%; }
 .login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:70px; border-radius:5px 5px 0px 0px; border-bottom:none;}
 .login-box2{background:#fff; width:90%; margin:0 auto;height:70px; border-radius:0px 0px 5px 5px;  margin-top: 20px;}

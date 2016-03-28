@@ -16,13 +16,11 @@ a{text-decoration:none; border: 0}
 img{border:0;}
 body{ width:100%; height:100%; background-image:url(../images/bg.jpg); background-repeat:no-repeat; background-size:cover}
 input{ outline:none}
-/*隐藏默认的checkbox*/
 input[type=checkbox] {
 	visibility: hidden;
 }
 
 
-/*宽度414*/
 .logo{ 
 	position:absolute;
 	top: 80px;
@@ -34,7 +32,6 @@ input[type=checkbox] {
 	}
 
 
-/*输入框*/
 .co-contain{ margin-top:20rem; width:100%;z-index: 1 ;position: absolute;}
 .login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:40px; border-radius:5px; border-bottom:none;}
 .login-box2{background:#fff; width:90%; margin:0 auto;height:40px; border-radius:5px;  margin-top: 20px;}
@@ -113,16 +110,13 @@ html{ font-size:9px}
 	}
 /*-----------------------------------*/
 
-/*输入框*/
 .co-contain{ margin-top: 14rem;}
 .login-box2 {margin-top: 15px;}
   
   
-/*按钮*/
 .co-bottom{ margin-top:5rem; width:100%;}
 .login-other a{  font-size:2.2rem;}
 
-/*勾选框*/
 .checkboxFive {
 	margin: 5px 0px 0px 0px;
 	position: relative;

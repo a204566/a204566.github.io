@@ -125,13 +125,13 @@
 
 
 <script>
-$("input").attr('data-role','none');  
-$("select").attr('data-role','none');
-//Solve a link failure
-$("a").attr('data-ajax',false);
+
 
 $(".minute-return").click(function(){
 	window.location.href='Popular-models.html'
+	})
+$(".minute-memu").click(function(){
+	window.location.href='my-message.html'
 	})
 
 //---------------
@@ -150,34 +150,7 @@ var banner = Swipe(document.getElementById('mySwipe'), {
 });
 
 
- //botton
-var obth=document.getElementById("dh_1");
-var bth_2=document.getElementById("dh_2");
-var bth_3=document.getElementById("dh_3");
-var bth_4=document.getElementById("dh_4");
 
-function init(){
-	obth.className ="bti-1";
-	bth_2.className ="bti-2";
-	bth_3.className ="bti-3";
-	bth_4.className ="bti-4"
-	}
-obth.onclick=function(){
-init();
-obth.className="bti-1-cur";
-}
-bth_2.onclick=function(){
-init();
-bth_2.className="bti-2-cur";
-}
-bth_3.onclick=function(){
-init();
-bth_3.className="bti-3-cur";
-}   
-bth_4.onclick=function(){
-init();
-bth_4.className="bti-4-cur";
-} 
 
 
 </script>

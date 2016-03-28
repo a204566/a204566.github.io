@@ -3,9 +3,7 @@
 a{color:#94999d}
 body{ background-color:#fff}
 .chose{ color:#2a8ae0}
-.ui-loader-default{ display:none;!important}
-.ui-mobile-viewport{ border:none;!important}
-.ui-page {padding: 0; margin: 0; outline: 0;!important}
+
 
 
 /*---------------------*/
@@ -31,7 +29,7 @@ body{ background-color:#fff}
 	border-radius:500px;
 	background-color:#000; 
 	opacity:0.5; 
-	background-image:url(../images/minute_memu.png);
+	background-image:url(../images/weixin_message_icon.png);
 	background-size: 21px auto;
 	background-repeat:no-repeat; 
 	background-position:center center;

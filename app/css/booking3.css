@@ -3,7 +3,7 @@
 a{color:#94999d}
 .chose{ color:#2a8ae0}
 
-/*输入框*/
+
 .co-contain{ width:100%; z-index:0; background-color:#fff}
 .login-box{background:#fff; width:90%; margin:0 auto; border:1px solid #dedede; height:70px; border-radius:5px 5px 0px 0px; border-bottom:none;}
 .login-box2{background:#fff; width:90%; margin:0 auto;height:70px; border-radius:0px 0px 5px 5px;  margin-top: 20px;}
@@ -103,7 +103,6 @@ a{color:#94999d}
 	border: solid 1px #b5b4b4;
 	}	
 
-/*按钮*/
 
 .clientele-btn{ 
 	width:90%; 
