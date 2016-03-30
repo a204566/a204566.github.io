@@ -26,14 +26,15 @@ input[type=checkbox] {
 	}
 .logo{ 
 	position:absolute;
-	top: 60px;
-        left:50%;
+	top:40px;
+    left:50%;
 	margin-left:-90px;
 	background-image:url(../images/car_logo.png);	
 	background-repeat:no-repeat;
 	width: 200px;
   	height: 200px;
  	background-size: 180px auto;
+	z-index:1;
 	}
 
 .co-contain{ margin-top:20rem; width:100%;z-index: 1 ;position: absolute;}
@@ -53,7 +54,8 @@ input[type=checkbox] {
 			
 	
 .fa{
-	 line-height:3rem;
+	 position: absolute;
+     top: 7px;
 	 text-align:center; 
 	 font-family:"Microsoft Yahei" ; 
 	 font-size:2.2rem;
@@ -84,7 +86,7 @@ input[type=checkbox] {
 }
 @media screen and (min-width: 414px) and (max-width:420px){	
 .fa{
-	 line-height:3rem;
+	 top: 1px;
 	 font-size:2.5rem;
 }
 .logo{ 
@@ -142,7 +144,7 @@ html{ font-size:9px}
 	left: 2px;
 }
 .fa{
-	 line-height:3rem;
+	 top: 7px;
 	 font-size:2.2rem;
 	}
 .bg{
